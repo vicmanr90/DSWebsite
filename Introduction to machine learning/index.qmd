@@ -1,0 +1,8 @@
+---
+title: "Introduction to machine learning"
+---
+
+Víctor Mario Noble Ramos, MSc.
+
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.

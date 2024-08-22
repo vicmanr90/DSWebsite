@@ -1,0 +1,21 @@
+project:
+  type: website
+
+website:
+  title: "Introduction to machine learning"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - href: slides.qmd
+        text: Tema 1
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
