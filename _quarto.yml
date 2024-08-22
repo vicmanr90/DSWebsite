@@ -7,9 +7,14 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: 'Acerca de'
       - href: slides.qmd
         text: Tema 1
+    tools:
+      - icon: linkedin
+        href: https://linkedin.com/in/vicmanr90/
+        text: LinkedIn de Víctor Mario Noble Ramos
 
 format:
   html:
