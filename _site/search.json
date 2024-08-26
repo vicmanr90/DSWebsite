@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Introduction to machine learning",
     "section": "",
-    "text": "Víctor Mario Noble Ramos, MSc.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Víctor Mario Noble Ramos, MSc.\nThis is my microsite.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "about.html",
@@ -16,8 +16,148 @@
   {
     "objectID": "slides.html#hola",
     "href": "slides.html#hola",
-    "title": "Introduction to machine learning",
+    "title": "Introduction to DS/ML",
     "section": "Hola",
     "text": "Hola"
+  },
+  {
+    "objectID": "docs/intro/1. Intro.html#data-science-and-related-disciplines",
+    "href": "docs/intro/1. Intro.html#data-science-and-related-disciplines",
+    "title": "Introduction to the field",
+    "section": "Data Science and related disciplines",
+    "text": "Data Science and related disciplines\nApart from mathematics and statistics…\nArtificial intelligence Field of study that focus on the theory, mechanisms and processes of human intelligence emulation. It is commonly said that it started in 1956 with the proposition of the perceptron, a simplified abstraction model of a biological neuron, by Frank Rosenblatt.\nMachine learning: Field of AI that comprises the models and forms of computer’s AI models training and deployment. Machine learning algorithms are the result of the mixing computer sciences and mathematics and statistics\nStatistical learning: Subfield of statistics that focus on models and their interpretability. Fuzzy line divides it from the Machine Learning.\nData Science: Field of study concentrated on the tools, mechanisms and processes to transform data into useful information, decision-making tools and decision-making support tools. DS shares some of the AI techniques and tools for this purpose.\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Data Science and Machine Learning. Source: Coursera DS vs ML"
+  },
+  {
+    "objectID": "docs/intro/1. Intro.html#data-versus-information",
+    "href": "docs/intro/1. Intro.html#data-versus-information",
+    "title": "Introduction to the field",
+    "section": "Data versus information",
+    "text": "Data versus information\nIn information theory we define data as some description of elements or properties that are related to a real or abstract entity.\nExamples of data:\n\n10,\n“pedro”,\n“3.1415”,\n“https://youtu.be/ja1sXvNCyO0”, etc.\n\nThe collection of all data related to an entity in particular is called: entry, registry, row, observation or individual, depending on the context. The organization of data of several entities, means, all the registries, of the same type is called dataset. A dataset can be presented in several forms, for example in a table form or a dictionary form. Each of these forms can be called a data structure.\nOne popular data structure is de ‘data frame’ used in most of the programming languages for the data treatment and development and avaliation of the DS models and algorithms.\nOn the other hand ‘information’ is a more difficult construct. It arises on what the data is telling us of the entity or group of entities under study.\nGathering information is harder than gathering data.\nExamples of data:\n\nExample of data in a table form.\n\n\nName\nAge\nScore\nCountry\n\n\n\n\nAna\n18\n8\nBrazil\n\n\nPedro\n19\n7\nBrazil\n\n\nLuisa\n19\n4\nBrazil\n\n\n\nWhat this data tell us?\nExample of information:\n“Ana, Pedro and Luisa are DS students from Brazil, Ana and Pedro have passed the DS course.”\nNote that the information needs a context to have a complete sense.\nThe context is also information and also a complement to the data in the same way the data serves as a complement to the context to complete all the information.\nAlso the relationship between the context and the data gives us some extra information. For example, the fact the entities of the dataset are students mean that the scores shown are grades of the DS course, also we can say that a grading of 4 makes the student to fail the course and that the bound between passing or failing the course is probably 5 or 6. From the age of the students we could say they are students of a bachelors degree and not undergraduate education."
+  },
+  {
+    "objectID": "docs/intro/1. Intro.html#nothing-new-ml-on-the-news",
+    "href": "docs/intro/1. Intro.html#nothing-new-ml-on-the-news",
+    "title": "Introduction to the field",
+    "section": "Nothing new: ML on the news",
+    "text": "Nothing new: ML on the news\n\nRead the Wikipedia article on the history of artificial intelligence.\nData Science started before it had a name assigned: In 1989 LeCun, Y. and other scientists published a paper about the backpropagation applied to character recognition. The paper has 5701 citations.\nIn 2011 IBM Watson beat 2 human players in the Jeopardy!. After more and more improvement, Watson had in 2012 the firs commercial application. Today IBM offers Watson as a set of AI and ML tools. The division of Watson Health was sold in 2022. See the New York Times article of the Watson system.\nIn 2012 Statistician Nate Silver accurately predicted the result of the US Senate election.\nStarting from 2015 we have seen an explosion of ML technologies:\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Machine Learning capabilities evolution. Source: Our world in data\n\n\n\nWhat is coming?"
+  },
+  {
+    "objectID": "docs/intro/1. Intro.html#data-science-applications",
+    "href": "docs/intro/1. Intro.html#data-science-applications",
+    "title": "Introduction to the field",
+    "section": "Data Science applications",
+    "text": "Data Science applications\nTaken from statistical learning EDX course\n\nProstate cancer risk factor indentifying.\n\n\n\n\nPair-wise scatter plot on prostate cancer data\n\n\n\nBell zipcode handwritten recognition\n\n\n\n\nHandwritten digits\n\n\n\nFashion MNIST\n\n\n\n\nFashion recognition\n\n\n\nHeart attack prediction based on family and socio-demographic data\n\n\n\n\nScatterplot on demographic data associated to heart attacks\n\n\n\nEmail spam detection Dataset description: 4601 emails sent to an individual (named George, at HP labs, before 2000). Each is labeled as spam or email.\n\n\n\n\n\n\n\ngeorge\nyou\nhp\nfree\n!\nedu\nremove\n\n\n\n\nspam\n0.00\n2.26\n0.02\n0.52\n0.51\n0.01\n0.28\n\n\nemail\n1.27\n1.27\n0.90\n0.07\n0.11\n0.29\n0.01"
+  },
+  {
+    "objectID": "docs/intro/1. Intro.html#data-wrangling",
+    "href": "docs/intro/1. Intro.html#data-wrangling",
+    "title": "Introduction to the field",
+    "section": "Data wrangling",
+    "text": "Data wrangling\nIt comprehends the process of importing the data, transforming data types and cleaning the data. The feature engineering is the process where the data is complemented with some variables engineered with some external or internal data sources."
+  },
+  {
+    "objectID": "docs/intro/1. Intro.html#exploratory-data-analysis",
+    "href": "docs/intro/1. Intro.html#exploratory-data-analysis",
+    "title": "Introduction to the field",
+    "section": "Exploratory data analysis",
+    "text": "Exploratory data analysis\nIs the process in which we can understand the data and to establish relationships between variables of interest. Also in this stage, we can drop some of the variables that are correlated for starting the variable selection process."
+  },
+  {
+    "objectID": "docs/intro/1. Intro.html#modeling",
+    "href": "docs/intro/1. Intro.html#modeling",
+    "title": "Introduction to the field",
+    "section": "Modeling",
+    "text": "Modeling\nThis stage comprehends the selection of the relevant variables to the problem studied, the selection of models that will allow us to predict the variable of interest and the validation and fitting of the models compared. The models that were selected with best performance will be the tools selected for the communication of the results."
+  },
+  {
+    "objectID": "docs/intro/1. Intro.html#comunication",
+    "href": "docs/intro/1. Intro.html#comunication",
+    "title": "Introduction to the field",
+    "section": "Comunication",
+    "text": "Comunication\nIt is the final stage of the process of data science, the results have to be prepared to be communicate to the stakeholders. Also the deployment of validated apps could be part of this step."
+  },
+  {
+    "objectID": "docs/intro/1. Intro.html#measurement-of-errors",
+    "href": "docs/intro/1. Intro.html#measurement-of-errors",
+    "title": "Introduction to the field",
+    "section": "Measurement of errors",
+    "text": "Measurement of errors\nThe error in data science is related to the diference of the predicted value \\(\\hat{Y}\\) due to an input \\(X\\). The error is mathematically defined as: \\[\\epsilon = Y-\\hat{Y}\\] Note that for qualitative variables, the error will behave as a discrete (binary) variable.\nOur goal is to develop good estimations of the variable of interest \\(\\hat{Y}\\). Naturally the irreducible error will make our estimations imperfect but our goal is not the perfection, but the good approximation to the real observed values.\nThe expected value of the errors\nConsider a single fit of a model. The expected value of the squared errors will be: \\[E(\\epsilon^2) = \\big((f(X)-\\hat{f}(X)\\Big)^2 + \\mbox{Var}(\\epsilon)\\]"
+  },
+  {
+    "objectID": "docs/intro/1. Intro.html#parametric-and-non-parametric-models",
+    "href": "docs/intro/1. Intro.html#parametric-and-non-parametric-models",
+    "title": "Introduction to the field",
+    "section": "Parametric and non-parametric models",
+    "text": "Parametric and non-parametric models\nAs said, our goal is to estimate a function \\(\\hat{f}\\) that resembles the original and unknown \\(f\\) and use it to make predictions or inferences of \\(Y\\) from an entry of values \\(X\\). Several methods can be used to make this estimation. We can divide these methods or models into tow categories: parametric and non-parametric models.\n\nParametric models.\nThe parametric models are DS models that have some values that have to be adjusted in order to establish the correct adjustment of \\(\\hat{f}\\). Parametric methods involve a two-step model-based approach.\n\nWe assume the functional form of \\(f\\). For example, linear, quadratic, etc.\nAfter a model has been selected, we need a procedure that uses the training data to fit or train the model. In this attempt we can use the ordinary least squares method or the maximum verisimilitude method.\n\nExample. Let us consider the Income2 dataset. This data belong to the variables Income, Years of education and Seniority of a 30 individuals population. We can view the first 5 entries of the dataset.\n\n\nCode\ninc2 = read.csv('Income2.csv')\nkbl(head(inc2, n=5), escape = F) %&gt;%\n    kable_paper(\"hover\", full_width = F)%&gt;%\n    kable_styling(font_size = 12, bootstrap_options = c(\"striped\",\"hover\"))\n\n\n\n\n\nX\nEducation\nSeniority\nIncome\n\n\n\n\n1\n21.58621\n113.1034\n99.91717\n\n\n2\n18.27586\n119.3103\n92.57913\n\n\n3\n12.06897\n100.6897\n34.67873\n\n\n4\n17.03448\n187.5862\n78.70281\n\n\n5\n19.93103\n20.0000\n68.00992\n\n\n\n\n\n\n\nAnd we can view a scatter plot of this data:\nStatic graphic:\n\n\nCode\nattach(inc2)\nlibrary(rgl)\nplot3d(x = Education, y = Seniority, z = Income, type= \"p\", size=.75, col = \"red\")\n# rgl.bbox(color=\"grey99\", emission = \"grey\")\n\n\nA one more sophisticated:\n\n\nCode\nlibrary(plotly)\n# plot_ly(inc2, aes(x = Education, y = Seniority, z= Income, type=\"scatter3d\", mode=\"markers\", color = Income))\nfig &lt;- plot_ly(mtcars, x = ~Education, y = ~Seniority, z = ~Income, color = ~Income, marker = list(size=5))\nfig &lt;- fig %&gt;% add_markers()\nfig &lt;- fig %&gt;% layout(scene = list(xaxis = list(title = 'Years of Education'),\n                     yaxis = list(title = 'Seniority'),\n                     zaxis = list(title = 'Income')))\n\nfig"
+  },
+  {
+    "objectID": "docs/intro/intro.html#data-science-and-related-disciplines",
+    "href": "docs/intro/intro.html#data-science-and-related-disciplines",
+    "title": "Introduction to the field",
+    "section": "Data Science and related disciplines",
+    "text": "Data Science and related disciplines\nApart from mathematics and statistics…\nArtificial intelligence Field of study that focus on the theory, mechanisms and processes of human intelligence emulation. It is commonly said that it started in 1956 with the proposition of the perceptron, a simplified abstraction model of a biological neuron, by Frank Rosenblatt.\nMachine learning: Field of AI that comprises the models and forms of computer’s AI models training and deployment. Machine learning algorithms are the result of the mixing computer sciences and mathematics and statistics\nStatistical learning: Subfield of statistics that focus on models and their interpretability. Fuzzy line divides it from the Machine Learning.\nData Science: Field of study concentrated on the tools, mechanisms and processes to transform data into useful information, decision-making tools and decision-making support tools. DS shares some of the AI techniques and tools for this purpose.\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Data Science and Machine Learning. Source: Coursera DS vs ML"
+  },
+  {
+    "objectID": "docs/intro/intro.html#data-versus-information",
+    "href": "docs/intro/intro.html#data-versus-information",
+    "title": "Introduction to the field",
+    "section": "Data versus information",
+    "text": "Data versus information\nIn information theory we define data as some description of elements or properties that are related to a real or abstract entity.\nExamples of data:\n\n10,\n“pedro”,\n“3.1415”,\n“https://youtu.be/ja1sXvNCyO0”, etc.\n\nThe collection of all data related to an entity in particular is called: entry, registry, row, observation or individual, depending on the context. The organization of data of several entities, means, all the registries, of the same type is called dataset. A dataset can be presented in several forms, for example in a table form or a dictionary form. Each of these forms can be called a data structure.\nOne popular data structure is de ‘data frame’ used in most of the programming languages for the data treatment and development and avaliation of the DS models and algorithms.\nOn the other hand ‘information’ is a more difficult construct. It arises on what the data is telling us of the entity or group of entities under study.\nGathering information is harder than gathering data.\nExamples of data:\n\nExample of data in a table form.\n\n\nName\nAge\nScore\nCountry\n\n\n\n\nAna\n18\n8\nBrazil\n\n\nPedro\n19\n7\nBrazil\n\n\nLuisa\n19\n4\nBrazil\n\n\n\nWhat this data tell us?\nExample of information:\n“Ana, Pedro and Luisa are DS students from Brazil, Ana and Pedro have passed the DS course.”\nNote that the information needs a context to have a complete sense.\nThe context is also information and also a complement to the data in the same way the data serves as a complement to the context to complete all the information.\nAlso the relationship between the context and the data gives us some extra information. For example, the fact the entities of the dataset are students mean that the scores shown are grades of the DS course, also we can say that a grading of 4 makes the student to fail the course and that the bound between passing or failing the course is probably 5 or 6. From the age of the students we could say they are students of a bachelors degree and not undergraduate education."
+  },
+  {
+    "objectID": "docs/intro/intro.html#nothing-new-ml-on-the-news",
+    "href": "docs/intro/intro.html#nothing-new-ml-on-the-news",
+    "title": "Introduction to the field",
+    "section": "Nothing new: ML on the news",
+    "text": "Nothing new: ML on the news\n\nRead the Wikipedia article on the history of artificial intelligence.\nData Science started before it had a name assigned: In 1989 LeCun, Y. and other scientists published a paper about the backpropagation applied to character recognition. The paper has 5701 citations.\nIn 2011 IBM Watson beat 2 human players in the Jeopardy!. After more and more improvement, Watson had in 2012 the firs commercial application. Today IBM offers Watson as a set of AI and ML tools. The division of Watson Health was sold in 2022. See the New York Times article of the Watson system.\nIn 2012 Statistician Nate Silver accurately predicted the result of the US Senate election.\nStarting from 2015 we have seen an explosion of ML technologies:\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Machine Learning capabilities evolution. Source: Our world in data\n\n\n\nWhat is coming?"
+  },
+  {
+    "objectID": "docs/intro/intro.html#data-science-applications",
+    "href": "docs/intro/intro.html#data-science-applications",
+    "title": "Introduction to the field",
+    "section": "Data Science applications",
+    "text": "Data Science applications\nTaken from statistical learning EDX course\n\nProstate cancer risk factor indentifying.\n\n\n\n\nPair-wise scatter plot on prostate cancer data\n\n\n\nBell zipcode handwritten recognition\n\n\n\n\nHandwritten digits\n\n\n\nFashion MNIST\n\n\n\n\nFashion recognition\n\n\n\nHeart attack prediction based on family and socio-demographic data\n\n\n\n\nScatterplot on demographic data associated to heart attacks\n\n\n\nEmail spam detection Dataset description: 4601 emails sent to an individual (named George, at HP labs, before 2000). Each is labeled as spam or email.\n\n\n\n\n\n\n\ngeorge\nyou\nhp\nfree\n!\nedu\nremove\n\n\n\n\nspam\n0.00\n2.26\n0.02\n0.52\n0.51\n0.01\n0.28\n\n\nemail\n1.27\n1.27\n0.90\n0.07\n0.11\n0.29\n0.01"
+  },
+  {
+    "objectID": "docs/intro/intro.html#data-wrangling",
+    "href": "docs/intro/intro.html#data-wrangling",
+    "title": "Introduction to the field",
+    "section": "Data wrangling",
+    "text": "Data wrangling\nIt comprehends the process of importing the data, transforming data types and cleaning the data. The feature engineering is the process where the data is complemented with some variables engineered with some external or internal data sources."
+  },
+  {
+    "objectID": "docs/intro/intro.html#exploratory-data-analysis",
+    "href": "docs/intro/intro.html#exploratory-data-analysis",
+    "title": "Introduction to the field",
+    "section": "Exploratory data analysis",
+    "text": "Exploratory data analysis\nIs the process in which we can understand the data and to establish relationships between variables of interest. Also in this stage, we can drop some of the variables that are correlated for starting the variable selection process."
+  },
+  {
+    "objectID": "docs/intro/intro.html#modeling",
+    "href": "docs/intro/intro.html#modeling",
+    "title": "Introduction to the field",
+    "section": "Modeling",
+    "text": "Modeling\nThis stage comprehends the selection of the relevant variables to the problem studied, the selection of models that will allow us to predict the variable of interest and the validation and fitting of the models compared. The models that were selected with best performance will be the tools selected for the communication of the results."
+  },
+  {
+    "objectID": "docs/intro/intro.html#comunication",
+    "href": "docs/intro/intro.html#comunication",
+    "title": "Introduction to the field",
+    "section": "Comunication",
+    "text": "Comunication\nIt is the final stage of the process of data science, the results have to be prepared to be communicate to the stakeholders. Also the deployment of validated apps could be part of this step."
+  },
+  {
+    "objectID": "docs/intro/intro.html#measurement-of-errors",
+    "href": "docs/intro/intro.html#measurement-of-errors",
+    "title": "Introduction to the field",
+    "section": "Measurement of errors",
+    "text": "Measurement of errors\nThe error in data science is related to the diference of the predicted value \\(\\hat{Y}\\) due to an input \\(X\\). The error is mathematically defined as: \\[\\epsilon = Y-\\hat{Y}\\] Note that for qualitative variables, the error will behave as a discrete (binary) variable.\nOur goal is to develop good estimations of the variable of interest \\(\\hat{Y}\\). Naturally the irreducible error will make our estimations imperfect but our goal is not the perfection, but the good approximation to the real observed values.\nThe expected value of the errors\nConsider a single fit of a model. The expected value of the squared errors will be: \\[E(\\epsilon^2) = \\big((f(X)-\\hat{f}(X)\\Big)^2 + \\mbox{Var}(\\epsilon)\\]"
+  },
+  {
+    "objectID": "docs/intro/intro.html#parametric-and-non-parametric-models",
+    "href": "docs/intro/intro.html#parametric-and-non-parametric-models",
+    "title": "Introduction to the field",
+    "section": "Parametric and non-parametric models",
+    "text": "Parametric and non-parametric models\nAs said, our goal is to estimate a function \\(\\hat{f}\\) that resembles the original and unknown \\(f\\) and use it to make predictions or inferences of \\(Y\\) from an entry of values \\(X\\). Several methods can be used to make this estimation. We can divide these methods or models into tow categories: parametric and non-parametric models.\n\nParametric models.\nThe parametric models are DS models that have some values that have to be adjusted in order to establish the correct adjustment of \\(\\hat{f}\\). Parametric methods involve a two-step model-based approach.\n\nWe assume the functional form of \\(f\\). For example, linear, quadratic, etc.\nAfter a model has been selected, we need a procedure that uses the training data to fit or train the model. In this attempt we can use the ordinary least squares method or the maximum verisimilitude method.\n\nExample. Let us consider the Income2 dataset. This data belong to the variables Income, Years of education and Seniority of a 30 individuals population. We can view the first 5 entries of the dataset.\n\n\nCode\ninc2 = read.csv('Income2.csv')\nkbl(head(inc2, n=5), escape = F) %&gt;%\n    kable_paper(\"hover\", full_width = F)%&gt;%\n    kable_styling(font_size = 12, bootstrap_options = c(\"striped\",\"hover\"))\n\n\n\n\n\nX\nEducation\nSeniority\nIncome\n\n\n\n\n1\n21.58621\n113.1034\n99.91717\n\n\n2\n18.27586\n119.3103\n92.57913\n\n\n3\n12.06897\n100.6897\n34.67873\n\n\n4\n17.03448\n187.5862\n78.70281\n\n\n5\n19.93103\n20.0000\n68.00992\n\n\n\n\n\n\n\nAnd we can view a scatter plot of this data:\nStatic graphic:\n\n\nCode\nattach(inc2)\nlibrary(rgl)\nplot3d(x = Education, y = Seniority, z = Income, type= \"p\", size=.75, col = \"red\")\n# rgl.bbox(color=\"grey99\", emission = \"grey\")\n\n\nA one more sophisticated:\n\n\nCode\nlibrary(plotly)\n# plot_ly(inc2, aes(x = Education, y = Seniority, z= Income, type=\"scatter3d\", mode=\"markers\", color = Income))\nfig &lt;- plot_ly(mtcars, x = ~Education, y = ~Seniority, z = ~Income, color = ~Income, marker = list(size=5))\nfig &lt;- fig %&gt;% add_markers()\nfig &lt;- fig %&gt;% layout(scene = list(xaxis = list(title = 'Years of Education'),\n                     yaxis = list(title = 'Seniority'),\n                     zaxis = list(title = 'Income')))\n\nfig"
   }
 ]

@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Victor Mario Noble Ramos, MSc.">
+<meta name="dcterms.date" content="2024-08-22">
+
+<title>Introduction to DS/ML - Introduction to the field</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+<script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<link href="../../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="../../site_libs/viz-1.8.2/viz.js"></script>
+<link href="../../site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+<script src="../../site_libs/grViz-binding-1.0.11/grViz.js"></script>
+<script src="../../site_libs/plotly-binding-4.10.4/plotly.js"></script>
+<script src="../../site_libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="../../site_libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="../../site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="../../site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+<link href="../../site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="../../site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Introduction to DS/ML</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target=""><i class="bi bi-home" role="img">
+</i> 
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html" rel="" target="">
+ <span class="menu-text">Acerca de</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../slides.html" rel="" target="">
+ <span class="menu-text">Tema 1</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+    <a href="https://linkedin.com/in/vicmanr90/" rel="" title="LinkedIn de Víctor Mario Noble Ramos" class="quarto-navigation-tool px-1" aria-label="LinkedIn de Víctor Mario Noble Ramos"><i class="bi bi-linkedin"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/intro/intro.html">Introduction to the field</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/intro/intro.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Introduction to the field</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction-to-data-science" id="toc-introduction-to-data-science" class="nav-link active" data-scroll-target="#introduction-to-data-science">Introduction to Data Science</a></li>
+  <li><a href="#data-science-concepts" id="toc-data-science-concepts" class="nav-link" data-scroll-target="#data-science-concepts">Data Science concepts</a>
+  <ul class="collapse">
+  <li><a href="#data-science-and-related-disciplines" id="toc-data-science-and-related-disciplines" class="nav-link" data-scroll-target="#data-science-and-related-disciplines">Data Science and related disciplines</a></li>
+  <li><a href="#data-versus-information" id="toc-data-versus-information" class="nav-link" data-scroll-target="#data-versus-information">Data versus information</a></li>
+  </ul></li>
+  <li><a href="#examples-of-ds-applications" id="toc-examples-of-ds-applications" class="nav-link" data-scroll-target="#examples-of-ds-applications">Examples of DS applications</a>
+  <ul class="collapse">
+  <li><a href="#nothing-new-ml-on-the-news" id="toc-nothing-new-ml-on-the-news" class="nav-link" data-scroll-target="#nothing-new-ml-on-the-news">Nothing new: ML on the news</a></li>
+  <li><a href="#data-science-applications" id="toc-data-science-applications" class="nav-link" data-scroll-target="#data-science-applications">Data Science applications</a></li>
+  </ul></li>
+  <li><a href="#data-science-proyects-workflow" id="toc-data-science-proyects-workflow" class="nav-link" data-scroll-target="#data-science-proyects-workflow">Data Science proyects workflow</a>
+  <ul class="collapse">
+  <li><a href="#data-wrangling" id="toc-data-wrangling" class="nav-link" data-scroll-target="#data-wrangling">Data wrangling</a></li>
+  <li><a href="#exploratory-data-analysis" id="toc-exploratory-data-analysis" class="nav-link" data-scroll-target="#exploratory-data-analysis">Exploratory data analysis</a></li>
+  <li><a href="#modeling" id="toc-modeling" class="nav-link" data-scroll-target="#modeling">Modeling</a></li>
+  <li><a href="#comunication" id="toc-comunication" class="nav-link" data-scroll-target="#comunication">Comunication</a></li>
+  </ul></li>
+  <li><a href="#prediction-and-inference" id="toc-prediction-and-inference" class="nav-link" data-scroll-target="#prediction-and-inference">Prediction and inference</a></li>
+  <li><a href="#how-do-we-estimate-f" id="toc-how-do-we-estimate-f" class="nav-link" data-scroll-target="#how-do-we-estimate-f">How do we estimate <span class="math inline">\(f\)</span>?</a>
+  <ul class="collapse">
+  <li><a href="#measurement-of-errors" id="toc-measurement-of-errors" class="nav-link" data-scroll-target="#measurement-of-errors">Measurement of errors</a></li>
+  <li><a href="#parametric-and-non-parametric-models" id="toc-parametric-and-non-parametric-models" class="nav-link" data-scroll-target="#parametric-and-non-parametric-models">Parametric and non-parametric models</a>
+  <ul class="collapse">
+  <li><a href="#parametric-models." id="toc-parametric-models." class="nav-link" data-scroll-target="#parametric-models.">Parametric models.</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Introduction to the field</h1>
+<p class="subtitle lead">Introduction to Data Science I2DS</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Victor Mario Noble Ramos, MSc. </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 22, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="abstract-title">Abstract</div>
+    In this lesson we discover some of the important concepts, evolution and examples of the application of the data science discipline
+  </div>
+</div>
+
+</header>
+
+<section id="introduction-to-data-science" class="level1 unnumbered">
+<h1 class="unnumbered">Introduction to Data Science</h1>
+</section>
+<section id="data-science-concepts" class="level1">
+<h1>Data Science concepts</h1>
+<p>Let us define some concepts:</p>
+<section id="data-science-and-related-disciplines" class="level2">
+<h2 class="anchored" data-anchor-id="data-science-and-related-disciplines">Data Science and related disciplines</h2>
+<p>Apart from mathematics and statistics…</p>
+<p><strong>Artificial intelligence</strong> Field of study that focus on the theory, mechanisms and processes of human intelligence emulation. It is commonly said that it started in 1956 with the proposition of the <em>perceptron,</em> a simplified abstraction model of a biological neuron, by <a href="https://en.wikipedia.org/wiki/Frank_Rosenblatt" title="Frank Rosenblatt wiki">Frank Rosenblatt</a>.</p>
+<p><strong>Machine learning:</strong> Field of AI that comprises the models and forms of computer’s AI models training and deployment. Machine learning algorithms are the result of the mixing computer sciences and mathematics and statistics</p>
+<p><strong>Statistical learning:</strong> Subfield of statistics that focus on models and their interpretability. Fuzzy line divides it from the Machine Learning.</p>
+<p><strong>Data Science:</strong> Field of study concentrated on the tools, mechanisms and processes to transform <em>data</em> into useful <em>information</em>, decision-making tools and decision-making support tools. DS shares some of the AI techniques and tools for this purpose.</p>
+<!-- ::: {#fig-elephant} -->
+<!-- [![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Elephant_Diversity.jpg/1920px-Elephant_Diversity.jpg)](https://en.wikipedia.org/wiki/Elephant) -->
+<!-- This caption includes a link to [a webpage](https://en.wikipedia.org/wiki/Elephant). Also, click the image to try out the application. -->
+<!-- ::: -->
+<div id="fig-DSML" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.coursera.org/articles/data-science-vs-machine-learning"><img src="Data_Science_vs._Machine_Learning.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+<figcaption class="figure-caption">Figure&nbsp;1: Data Science and Machine Learning. Source: <a href="https://www.coursera.org/articles/data-science-vs-machine-learning">Coursera DS vs ML</a></figcaption>
+</figure>
+</div>
+</section>
+<section id="data-versus-information" class="level2">
+<h2 class="anchored" data-anchor-id="data-versus-information">Data versus information</h2>
+<p>In <em>information theory</em> we define <strong>data</strong> as some description of elements or properties that are related to a real or abstract entity.</p>
+<p>Examples of data:</p>
+<ul>
+<li><p>10,</p></li>
+<li><p>“pedro”,</p></li>
+<li><p>“3.1415”,</p></li>
+<li><p>“https://youtu.be/ja1sXvNCyO0”, etc.</p></li>
+</ul>
+<p>The collection of all data related to an entity in particular is called: <strong>entry</strong>, <strong>registry</strong>, <strong>row</strong>, <strong>observation</strong> or <strong>individual</strong>, depending on the context. The organization of data of several entities, means, all the registries, of the same type is called <strong><em>dataset</em></strong>. A dataset can be presented in several forms, for example in a table form or a dictionary form. Each of these forms can be called a <strong><em>data structure</em></strong>.</p>
+<p>One popular data structure is de ‘<strong><em>data frame</em></strong>’ used in most of the programming languages for the data treatment and development and avaliation of the DS models and algorithms.</p>
+<p>On the other hand ‘<strong><em>information</em></strong>’ is a more difficult construct. It arises on what the data is telling us of the entity or group of entities under study.</p>
+<p>Gathering information is harder than gathering data.</p>
+<p>Examples of data:</p>
+<table class="table">
+<caption>Example of data in a table form.</caption>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Age</th>
+<th>Score</th>
+<th>Country</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ana</td>
+<td>18</td>
+<td>8</td>
+<td>Brazil</td>
+</tr>
+<tr class="even">
+<td>Pedro</td>
+<td>19</td>
+<td>7</td>
+<td>Brazil</td>
+</tr>
+<tr class="odd">
+<td>Luisa</td>
+<td>19</td>
+<td>4</td>
+<td>Brazil</td>
+</tr>
+</tbody>
+</table>
+<p><em>What this data tell us?</em></p>
+<p>Example of information:</p>
+<p><em>“Ana, Pedro and Luisa are DS students from Brazil, Ana and Pedro have passed the DS course.”</em></p>
+<p>Note that the information needs a <strong><em>context</em></strong> to have a complete sense.</p>
+<p>The context is also information and also a complement to the data in the same way the data serves as a complement to the context to complete all the information.</p>
+<p>Also the <strong><em>relationship</em></strong> between the context and the data gives us some extra information. For example, the fact the entities of the dataset are students mean that the scores shown are grades of the DS course, also we can say that a grading of 4 makes the student to fail the course and that the bound between passing or failing the course is probably 5 or 6. From the age of the students we could say they are students of a bachelors degree and not undergraduate education.</p>
+</section>
+</section>
+<section id="examples-of-ds-applications" class="level1">
+<h1>Examples of DS applications</h1>
+<section id="nothing-new-ml-on-the-news" class="level2">
+<h2 class="anchored" data-anchor-id="nothing-new-ml-on-the-news">Nothing new: ML on the news</h2>
+<ul>
+<li><p>Read the <a href="https://en.wikipedia.org/wiki/History_of_artificial_intelligence" title="Wikipedia article on the history of AI">Wikipedia article</a> on the history of artificial intelligence.</p></li>
+<li><p>Data Science started before it had a name assigned: In 1989 LeCun, Y. and other scientists published a <a href="https://proceedings.neurips.cc/paper_files/paper/1989/file/53c3bce66e43be4f209556518c2fcb54-Paper.pdf" title="Handwritten Digit Recognition with a Back-Propagation Network">paper</a> about the <em>backpropagation</em> applied to character recognition. The paper has 5701 citations.</p></li>
+<li><p>In 2011 IBM Watson beat 2 human players in the Jeopardy!. After more and more improvement, Watson had in 2012 the firs commercial application. Today IBM offers Watson as a set of AI and ML tools. The division of Watson Health was sold in 2022. See the <a href="https://www.nytimes.com/2021/07/16/technology/what-happened-ibm-watson.html">New York Times article</a> of the Watson system.</p></li>
+<li><p>In 2012 Statistician Nate Silver accurately predicted the result of the US Senate election.</p></li>
+<li><p>Starting from 2015 we have seen an explosion of ML technologies:</p></li>
+</ul>
+<div id="fig-DSML" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href=""><img src="AI-performance_Dynabench-paper-2048x921.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href=""><img src="ai-timeline-2048x518.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+<figcaption class="figure-caption">Figure&nbsp;2: Machine Learning capabilities evolution. Source: <a href="https://ourworldindata.org/brief-history-of-ai">Our world in data</a></figcaption>
+</figure>
+</div>
+<ul>
+<li>What is coming?</li>
+</ul>
+</section>
+<section id="data-science-applications" class="level2">
+<h2 class="anchored" data-anchor-id="data-science-applications">Data Science applications</h2>
+<p><em>Taken from statistical learning <a href="https://www.edx.org/course/statistical-learning">EDX course</a></em></p>
+<ul>
+<li><strong>Prostate cancer risk factor indentifying.</strong></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="prostate_cancer.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Pair-wise scatter plot on prostate cancer data</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Bell zipcode handwritten recognition</strong></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="handwritten_digits.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Handwritten digits</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Fashion MNIST</strong></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fashion.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Fashion recognition</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Heart attack prediction based on family and socio-demographic data</strong></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="heart_attack.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Scatterplot on demographic data associated to heart attacks</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Email spam detection</strong> Dataset description: 4601 emails sent to an individual (named George, at HP labs, before 2000). Each is labeled as <code>spam</code> or <code>email</code>.</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<table class="lightable-paper lightable-hover table table-striped table-hover table-sm small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th"></th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">george</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">you</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">hp</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">free</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">!</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">edu</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">remove</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">spam</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">2.26</td>
+<td style="text-align: right;">0.02</td>
+<td style="text-align: right;">0.52</td>
+<td style="text-align: right;">0.51</td>
+<td style="text-align: right;">0.01</td>
+<td style="text-align: right;">0.28</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">email</td>
+<td style="text-align: right;">1.27</td>
+<td style="text-align: right;">1.27</td>
+<td style="text-align: right;">0.90</td>
+<td style="text-align: right;">0.07</td>
+<td style="text-align: right;">0.11</td>
+<td style="text-align: right;">0.29</td>
+<td style="text-align: right;">0.01</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</section>
+</section>
+<section id="data-science-proyects-workflow" class="level1">
+<h1>Data Science proyects workflow</h1>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DiagrammeR)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">grViz</span>(</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="st">"digraph {</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="st">  compound=true;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="st">  graph [layout = dot]</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="st">  </span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="st">  # define the global styles of the nodes. We can override these in box if we wish</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="st">  node [shape = oval, fontname=verdana]</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="st">  </span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="st">  subgraph cluster_dw {</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="st">    color = darkslategray3;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="st">    fontname = Verdana;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="st">    </span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="st">    node [style=filled, color = darkslategray3]</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="st">    'Data</span><span class="sc">\n</span><span class="st">Exploration'-&gt;'Transformation'-&gt;'Data </span><span class="sc">\n</span><span class="st">cleaning'-&gt;'Feature </span><span class="sc">\n</span><span class="st">engineering';</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="st">    </span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="st">    label= 'Data Wrangling';</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="st">  }</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="st">  </span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="st">  subgraph cluster_eda {</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="st">    color = lightskyblue;</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="st">    fontname = Verdana;</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="st">    </span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="st">    node [style=filled, color = lightskyblue]</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="st">    'Variables </span><span class="sc">\n</span><span class="st">understanding'-&gt;'Correlation </span><span class="sc">\n</span><span class="st">analysis' -&gt; 'Variables filtering';</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="st">    </span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="st">    label= 'Exploratory Data Analysis';</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="st">  </span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="st">  }</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="st">  </span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="st">  subgraph cluster_mod {</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="st">    color = mediumpurple1;</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="st">    fontname = Verdana;</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="st">    </span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="st">    node [style=filled, color = mediumpurple1]</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="st">    'Variable </span><span class="sc">\n</span><span class="st">selection'-&gt;'Model </span><span class="sc">\n</span><span class="st">selection'-&gt; 'Model</span><span class="sc">\n</span><span class="st">training anď tunning'-&gt;'Model</span><span class="sc">\n</span><span class="st">testing';</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="st">    </span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="st">    label= 'Modeling';</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="st">  </span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="st">  }</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="st">  </span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="st">  subgraph cluster_com {</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="st">    color = mediumorchid1;</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="st">    fontname = Verdana;</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="st">    </span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="st">    node [style=filled, color = mediumorchid1]</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="st">    'Information </span><span class="sc">\n</span><span class="st">selection'-&gt;'Report </span><span class="sc">\n</span><span class="st">preparation'-&gt; 'Presentation';</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="st">    </span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="st">    label= 'Comunication';</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="st">  </span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="st">  }</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="st">}"</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div class="grViz html-widget html-fill-item" id="htmlwidget-fe120b1053b7773bc965" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-fe120b1053b7773bc965">{"x":{"diagram":"digraph {\n  compound=true;\n  graph [layout = dot]\n  \n  # define the global styles of the nodes. We can override these in box if we wish\n  node [shape = oval, fontname=verdana]\n  \n  subgraph cluster_dw {\n    color = darkslategray3;\n    fontname = Verdana;\n    \n    node [style=filled, color = darkslategray3]\n    \"Data\nExploration\"->\"Transformation\"->\"Data \ncleaning\"->\"Feature \nengineering\";\n    \n    label= \"Data Wrangling\";\n  }\n  \n  subgraph cluster_eda {\n    color = lightskyblue;\n    fontname = Verdana;\n    \n    node [style=filled, color = lightskyblue]\n    \"Variables \nunderstanding\"->\"Correlation \nanalysis\" -> \"Variables filtering\";\n    \n    label= \"Exploratory Data Analysis\";\n  \n  }\n  \n  subgraph cluster_mod {\n    color = mediumpurple1;\n    fontname = Verdana;\n    \n    node [style=filled, color = mediumpurple1]\n    \"Variable \nselection\"->\"Model \nselection\"-> \"Model\ntraining anď tunning\"->\"Model\ntesting\";\n    \n    label= \"Modeling\";\n  \n  }\n  \n  subgraph cluster_com {\n    color = mediumorchid1;\n    fontname = Verdana;\n    \n    node [style=filled, color = mediumorchid1]\n    \"Information \nselection\"->\"Report \npreparation\"-> \"Presentation\";\n    \n    label= \"Comunication\";\n  \n  }\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<p>DS projects pathway</p>
+</div>
+</div>
+<!-- ![DS projects pathway]() -->
+<section id="data-wrangling" class="level2">
+<h2 class="anchored" data-anchor-id="data-wrangling">Data wrangling</h2>
+<p>It comprehends the process of importing the data, transforming data types and cleaning the data. The feature engineering is the process where the data is complemented with some variables engineered with some external or internal data sources.</p>
+</section>
+<section id="exploratory-data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="exploratory-data-analysis">Exploratory data analysis</h2>
+<p>Is the process in which we can understand the data and to establish relationships between variables of interest. Also in this stage, we can drop some of the variables that are correlated for starting the variable selection process.</p>
+</section>
+<section id="modeling" class="level2">
+<h2 class="anchored" data-anchor-id="modeling">Modeling</h2>
+<p>This stage comprehends the selection of the relevant variables to the problem studied, the selection of models that will allow us to predict the variable of interest and the validation and fitting of the models compared. The models that were selected with best performance will be the tools selected for the communication of the results.</p>
+</section>
+<section id="comunication" class="level2">
+<h2 class="anchored" data-anchor-id="comunication">Comunication</h2>
+<p>It is the final stage of the process of data science, the results have to be prepared to be communicate to the stakeholders. Also the deployment of validated apps could be part of this step.</p>
+</section>
+</section>
+<section id="prediction-and-inference" class="level1 page-columns page-full">
+<h1>Prediction and inference</h1>
+<p>Consider the dataset Advertising from the Kaggle repository (200 observations). Below the first 15 entries are shown:</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="lightable-paper lightable-hover table table-striped table-hover table-sm small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">TV</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Radio</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Newspaper</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Sales</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">230.1</td>
+<td style="text-align: right;">37.8</td>
+<td style="text-align: right;">69.2</td>
+<td style="text-align: right;">22.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">44.5</td>
+<td style="text-align: right;">39.3</td>
+<td style="text-align: right;">45.1</td>
+<td style="text-align: right;">10.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">17.2</td>
+<td style="text-align: right;">45.9</td>
+<td style="text-align: right;">69.3</td>
+<td style="text-align: right;">12.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">151.5</td>
+<td style="text-align: right;">41.3</td>
+<td style="text-align: right;">58.5</td>
+<td style="text-align: right;">16.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">180.8</td>
+<td style="text-align: right;">10.8</td>
+<td style="text-align: right;">58.4</td>
+<td style="text-align: right;">17.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8.7</td>
+<td style="text-align: right;">48.9</td>
+<td style="text-align: right;">75.0</td>
+<td style="text-align: right;">7.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">57.5</td>
+<td style="text-align: right;">32.8</td>
+<td style="text-align: right;">23.5</td>
+<td style="text-align: right;">11.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">120.2</td>
+<td style="text-align: right;">19.6</td>
+<td style="text-align: right;">11.6</td>
+<td style="text-align: right;">13.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">8.6</td>
+<td style="text-align: right;">2.1</td>
+<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">4.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">199.8</td>
+<td style="text-align: right;">2.6</td>
+<td style="text-align: right;">21.2</td>
+<td style="text-align: right;">15.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">66.1</td>
+<td style="text-align: right;">5.8</td>
+<td style="text-align: right;">24.2</td>
+<td style="text-align: right;">12.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">214.7</td>
+<td style="text-align: right;">24.0</td>
+<td style="text-align: right;">4.0</td>
+<td style="text-align: right;">17.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">23.8</td>
+<td style="text-align: right;">35.1</td>
+<td style="text-align: right;">65.9</td>
+<td style="text-align: right;">9.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">97.5</td>
+<td style="text-align: right;">7.6</td>
+<td style="text-align: right;">7.2</td>
+<td style="text-align: right;">13.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">204.1</td>
+<td style="text-align: right;">32.9</td>
+<td style="text-align: right;">46.0</td>
+<td style="text-align: right;">19.0</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+<p>The dataset is consists of the sales of a product in 200 different markets, along with advertising budgets for the product in three different media: TV, radio, and newspaper.</p>
+<p>It is not possible directly increase sales. On the other hand, the manufacturer can control the advertising expenditure in each of the three media.</p>
+<ul>
+<li>Advertising budgets are <strong><em>input variables</em></strong>, <strong><em>features</em></strong>, <strong><em>predictors</em></strong>, <strong><em>independent variables</em></strong> or just <strong><em>variables</em></strong>; while sales is the <strong><em>output variable</em></strong>, <strong><em>response</em></strong> or <strong><em>dependent variables</em></strong>.</li>
+</ul>
+<p>Let <span class="math inline">\(X_i\)</span> the expenditure on media <span class="math inline">\(i\)</span>, and <span class="math inline">\(Y\)</span> the sales amount.</p>
+<p>Let us examine the relationship between each expenditure <span class="math inline">\(X_i\)</span>:</p>
+<p><strong>Code moment</strong></p>
+<div class="page-columns page-full">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Asignar colores a cada variable</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>colors <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'TV'</span><span class="ot">=</span><span class="st">"blue"</span>, <span class="st">"Radio"</span> <span class="ot">=</span> <span class="st">"green"</span>, <span class="st">"Newspaper"</span><span class="ot">=</span><span class="st">"red"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Función para graficar cada variable vs Sales</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>plot_exp <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Llamada a la función plot de la variable x vs Sales</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot</span>(data[[x]], data<span class="sc">$</span>Sales, </span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>       </span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Título del gráfico</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">main=</span><span class="st">""</span>,<span class="co">#paste(x,"expenditure vs. Sales amount"), </span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Títulos de los ejes (Vacíos para poder aumentarles el tamaño)</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab=</span><span class="st">""</span>, <span class="at">ylab=</span><span class="st">""</span>,</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Dándole forma al marcador (forma y color)</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">pch=</span><span class="dv">18</span>, <span class="at">col=</span>colors[x], <span class="at">axes=</span>F)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Colocar una cajita</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">box</span>(<span class="at">col=</span><span class="st">"black"</span>)</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Tics de los ejes:</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">axis</span>(<span class="dv">1</span>, <span class="at">cex.axis=</span><span class="dv">2</span>)</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">axis</span>(<span class="dv">2</span>, <span class="at">cex.axis=</span><span class="dv">2</span>)</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Aumentar tamaño del texto</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  <span class="co"># eje x</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>  eje_x <span class="ot">=</span> <span class="fu">paste</span>(x,<span class="st">"expenditure"</span>)</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mtext</span>(eje_x, <span class="at">side=</span><span class="dv">1</span>, <span class="at">line=</span><span class="fl">2.3</span>, <span class="at">cex=</span><span class="dv">2</span>)</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>  <span class="co"># eje y</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mtext</span>(<span class="st">"Sales"</span>, <span class="at">side=</span><span class="dv">2</span>, <span class="at">line=</span><span class="fl">2.3</span>, <span class="at">cex=</span><span class="dv">2</span>)</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Título del subplot</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  title <span class="ot">=</span> <span class="fu">paste</span>(x,<span class="st">"expenditure vs. Sales amount"</span>)</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mtext</span>(<span class="fu">bquote</span>(<span class="fu">bold</span>(.(title))), <span class="at">side=</span><span class="dv">3</span>, <span class="at">cex=</span><span class="fl">2.1</span>)</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Aplicamos la función a cada variable</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(<span class="fu">c</span>(<span class="st">"TV"</span>, <span class="st">"Radio"</span>, <span class="st">"Newspaper"</span>), plot_exp)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell column-screen-inset-right quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img src="intro_files/figure-html/multiple_output-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output-display quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img src="intro_files/figure-html/multiple_output-2.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output-display quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img src="intro_files/figure-html/multiple_output-3.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</div>
+</div>
+<p>It could be said that the variables show <strong><em>correlation</em></strong> in more or less degree with the response variable.</p>
+<p>Defining $X = (X_1, X_2, , X_p), we can establish then the following model: <span class="math display">\[Y = f(X) + \epsilon\]</span> The function <span class="math inline">\(f\)</span> is called the <strong><em>model</em></strong> and the term <span class="math inline">\(\epsilon\)</span> is called <strong><em>error</em></strong> or <strong><em>residual</em></strong>. This error is twofold: the <strong><em>reducible error</em></strong> and the <strong><em>irreducible error</em></strong>.</p>
+<p>The reducible error depends on the quality of the estimation of <span class="math inline">\(f\)</span>, i.e.&nbsp;<span class="math inline">\(\hat{f}\approx f\)</span></p>
+<p>As another example let us consider the the plot of income versus years of education for 30 individuals in the <code>Income</code> data set. (<em>How to make this plot?</em>)</p>
+<div class="page-columns page-full">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df_income <span class="ot">=</span> <span class="fu">read.csv</span>(<span class="st">"Income1.csv"</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(df_income)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#plot1</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> df_income[[<span class="st">"Education"</span>]], <span class="at">y =</span> Income, </span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">col =</span> <span class="st">"red"</span>, </span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">pch =</span> <span class="dv">19</span>, </span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab=</span><span class="st">"Years of Education"</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">cex =</span> <span class="dv">2</span>,</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">cex.lab =</span> <span class="dv">2</span>,</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">cex.axis =</span> <span class="dv">2</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co">#plot2</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> Education, <span class="at">y =</span> Income, <span class="at">col =</span> <span class="st">"red"</span>, </span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">pch =</span> <span class="dv">19</span>, </span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Years of Education"</span>,</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">cex =</span> <span class="dv">2</span>,</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">cex.lab =</span> <span class="dv">2</span>,</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>  <span class="at">cex.axis =</span> <span class="dv">2</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Ajustando regresión con smoothing splines</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>smoothingSpline <span class="ot">=</span> <span class="fu">smooth.spline</span>(Education, Income, <span class="at">spar=</span><span class="fl">0.7</span>)</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(smoothingSpline, <span class="at">col=</span><span class="st">'blue'</span>, <span class="at">lwd=</span><span class="fl">2.5</span>)</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="co">#Adicionando desviaciones al gráfico</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a><span class="fu">segments</span>(<span class="at">x0 =</span> smoothingSpline<span class="sc">$</span>x, <span class="at">y0 =</span> smoothingSpline<span class="sc">$</span>y, <span class="at">x1 =</span> Education, <span class="at">y1 =</span> Income, <span class="at">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="co"># mtext("Sales", side=2, line=2.3, cex=2)</span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="co"># lines(predict(loess(Income~Education, span = 0.5)), col='blue', lwd=2)</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="co"># p &lt;- ggplot(df_income, aes(x = Education, y = Income)) </span></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a><span class="co"># p &lt;- p + geom_point(color = "red") </span></span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a><span class="co"># p &lt;- p + ggtitle("Years of education vs Income") + xlab("Years of Education") + ylab("Income")</span></span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a><span class="co"># p &lt;- p + theme_light()</span></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="co"># p</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell column-screen-inset-right quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="intro_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="intro_files/figure-html/unnamed-chunk-11-2.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</div>
+</div>
+<!-- ![Invome vs years of study](Income.png) -->
+<p>The <code>Income</code> data set. <strong><em>Left:</em></strong> The red dots are the observed values of <em>income</em> (in tens of thousands of dollars) and <em>years of education</em> for 30 individuals. <strong><em>Right:</em></strong> The blue curve represents the true underlying relationship between income and years of education, which is generally unknown (but is known in this case because the data were simulated). The black lines represent the error associated with each observation. Note that some errors are positive (if an observation lies above the blue curve) and some are negative (if an observation lies below the curve). Overall, these errors have approximately mean zero.</p>
+<p>Our task will be estimate <span class="math inline">\(f\)</span>, or estimate the model. This is due by 2 reasons:</p>
+<p><strong>1. Prediction</strong></p>
+<p>In many situations, a set of inputs <span class="math inline">\(X\)</span> are readily available, but the output Y cannot be easily obtained. In this setting, since the error term averages to zero, we can predict <span class="math inline">\(Y\)</span> using:</p>
+<p><span class="math display">\[\hat{Y}=\hat{f}(X)\]</span> where <span class="math inline">\(\hat{f}\)</span> represents our estimate for <span class="math inline">\(f\)</span>, <span class="math inline">\(\hat{f}\)</span> is often treated as a <strong><em>black box</em></strong>, although there are some datasets that allow to adjust good known models.</p>
+<p><strong>2. Inference</strong> In the other hand, we could be interested in understanding the association between <span class="math inline">\(Y\)</span> and <span class="math inline">\(X_1, \ldots, X_p\)</span>. In this situation we wish to estimate <span class="math inline">\(f\)</span>, but our goal is not necessarily to make predictions for <span class="math inline">\(Y\)</span>. Now <span class="math inline">\(\bar{f}\)</span> cannot be treated as a black box, because we need to know its exact form.</p>
+<p>Let us expand the notion of the <code>Income</code> dataset. Let us supose there is another variable called seniority related to te experience of the person. Now the <em>income</em> can be explained by the two variables: <em>years of education</em> and <em>seniority</em>.</p>
+</section>
+<section id="how-do-we-estimate-f" class="level1">
+<h1>How do we estimate <span class="math inline">\(f\)</span>?</h1>
+<section id="measurement-of-errors" class="level2">
+<h2 class="anchored" data-anchor-id="measurement-of-errors">Measurement of errors</h2>
+<p>The <strong><em>error</em></strong> in data science is related to the diference of the predicted value <span class="math inline">\(\hat{Y}\)</span> due to an input <span class="math inline">\(X\)</span>. The error is mathematically defined as: <span class="math display">\[\epsilon = Y-\hat{Y}\]</span> Note that for qualitative variables, the error will behave as a discrete (binary) variable.</p>
+<p>Our goal is to develop good estimations of the variable of interest <span class="math inline">\(\hat{Y}\)</span>. Naturally the irreducible error will make our estimations imperfect but our goal is not the perfection, but the good approximation to the real observed values.</p>
+<p><strong>The expected value of the errors</strong></p>
+<p>Consider a single fit of a model. The expected value of the squared errors will be: <span class="math display">\[E(\epsilon^2) = \big((f(X)-\hat{f}(X)\Big)^2 + \mbox{Var}(\epsilon)\]</span></p>
+</section>
+<section id="parametric-and-non-parametric-models" class="level2">
+<h2 class="anchored" data-anchor-id="parametric-and-non-parametric-models">Parametric and non-parametric models</h2>
+<p>As said, our goal is to estimate a function <span class="math inline">\(\hat{f}\)</span> that resembles the original and unknown <span class="math inline">\(f\)</span> and use it to make predictions or inferences of <span class="math inline">\(Y\)</span> from an entry of values <span class="math inline">\(X\)</span>. Several methods can be used to make this estimation. We can divide these methods <em>or models</em> into tow categories: <strong><em>parametric</em></strong> and <strong><em>non-parametric</em></strong> models.</p>
+<section id="parametric-models." class="level3">
+<h3 class="anchored" data-anchor-id="parametric-models.">Parametric models.</h3>
+<p>The <strong><em>parametric models</em></strong> are DS models that have some values that have to be adjusted in order to establish the correct adjustment of <span class="math inline">\(\hat{f}\)</span>. Parametric methods involve a two-step model-based approach.</p>
+<ol type="1">
+<li><p>We assume the functional form of <span class="math inline">\(f\)</span>. For example, linear, quadratic, etc.</p></li>
+<li><p>After a model has been selected, we need a procedure that uses the training data to <em>fit</em> or <em>train</em> the model. In this attempt we can use the ordinary least squares method or the maximum verisimilitude method.</p></li>
+</ol>
+<p>Example. Let us consider the <code>Income2</code> dataset. This data belong to the variables <code>Income</code>, <code>Years of education</code> and <code>Seniority</code> of a 30 individuals population. We can view the first 5 entries of the dataset.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>inc2 <span class="ot">=</span> <span class="fu">read.csv</span>(<span class="st">'Income2.csv'</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">kbl</span>(<span class="fu">head</span>(inc2, <span class="at">n=</span><span class="dv">5</span>), <span class="at">escape =</span> F) <span class="sc">%&gt;%</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">kable_paper</span>(<span class="st">"hover"</span>, <span class="at">full_width =</span> F)<span class="sc">%&gt;%</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">kable_styling</span>(<span class="at">font_size =</span> <span class="dv">12</span>, <span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">"striped"</span>,<span class="st">"hover"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<table class="lightable-paper lightable-hover table table-striped table-hover table-sm small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">X</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Education</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Seniority</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Income</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">21.58621</td>
+<td style="text-align: right;">113.1034</td>
+<td style="text-align: right;">99.91717</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">18.27586</td>
+<td style="text-align: right;">119.3103</td>
+<td style="text-align: right;">92.57913</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">12.06897</td>
+<td style="text-align: right;">100.6897</td>
+<td style="text-align: right;">34.67873</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">17.03448</td>
+<td style="text-align: right;">187.5862</td>
+<td style="text-align: right;">78.70281</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">19.93103</td>
+<td style="text-align: right;">20.0000</td>
+<td style="text-align: right;">68.00992</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+<p>And we can view a scatter plot of this data:</p>
+<p><strong><em>Static graphic:</em></strong></p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(inc2)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rgl)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot3d</span>(<span class="at">x =</span> Education, <span class="at">y =</span> Seniority, <span class="at">z =</span> Income, <span class="at">type=</span> <span class="st">"p"</span>, <span class="at">size=</span>.<span class="dv">75</span>, <span class="at">col =</span> <span class="st">"red"</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># rgl.bbox(color="grey99", emission = "grey")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p><strong><em>A one more sophisticated:</em></strong></p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># plot_ly(inc2, aes(x = Education, y = Seniority, z= Income, type="scatter3d", mode="markers", color = Income))</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> <span class="fu">plot_ly</span>(mtcars, <span class="at">x =</span> <span class="sc">~</span>Education, <span class="at">y =</span> <span class="sc">~</span>Seniority, <span class="at">z =</span> <span class="sc">~</span>Income, <span class="at">color =</span> <span class="sc">~</span>Income, <span class="at">marker =</span> <span class="fu">list</span>(<span class="at">size=</span><span class="dv">5</span>))</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> fig <span class="sc">%&gt;%</span> <span class="fu">add_markers</span>()</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> fig <span class="sc">%&gt;%</span> <span class="fu">layout</span>(<span class="at">scene =</span> <span class="fu">list</span>(<span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">'Years of Education'</span>),</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>                     <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">'Seniority'</span>),</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>                     <span class="at">zaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">'Income'</span>)))</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>fig</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-9d88480b891657ee16f2" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-9d88480b891657ee16f2">{"x":{"visdat":{"8894160e3403":["function () ","plotlyVisDat"]},"cur_data":"8894160e3403","attrs":{"8894160e3403":{"x":{},"y":{},"z":{},"marker":{"size":5},"color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter3d","mode":"markers","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"scene":{"xaxis":{"title":"Years of Education"},"yaxis":{"title":"Seniority"},"zaxis":{"title":"Income"}},"hovermode":"closest","showlegend":false,"legend":{"yanchor":"top","y":0.5}},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[21.586206896551701,18.275862068965498,12.0689655172414,17.034482758620701,19.931034482758601,18.275862068965498,19.931034482758601,21.172413793103399,20.3448275862069,10,13.7241379310345,18.689655172413801,11.6551724137931,16.620689655172399,10,20.3448275862069,14.137931034482801,16.620689655172399,16.620689655172399,20.3448275862069,18.275862068965498,14.551724137931,17.448275862069,10.413793103448301,21.586206896551701,11.241379310344801,19.931034482758601,11.6551724137931,12.0689655172414,17.034482758620701],"y":[113.10344827586199,119.31034482758599,100.68965517241401,187.586206896552,20,26.2068965517241,150.344827586207,82.068965517241395,88.275862068965495,113.10344827586199,51.034482758620697,144.13793103448299,20,94.482758620689694,187.586206896552,94.482758620689694,20,44.827586206896598,175.172413793103,187.586206896552,100.68965517241401,137.931034482759,94.482758620689694,32.413793103448299,20,44.827586206896598,168.96551724137899,57.241379310344797,32.413793103448299,106.89655172413801],"z":[99.917172611438104,92.579134855529006,34.678727152087397,78.702806235369493,68.009921647155096,71.504485381431806,87.970466993911501,79.811029833125502,90.006327108579995,45.655529499736403,31.913807937129501,96.282996802286902,27.982504900060299,66.601792415136998,41.531992420147802,89.00070081522,28.8163007592387,57.681694257360498,70.105096042445695,98.834011543544705,74.704699197689095,53.532105628303398,72.078923665519099,18.570665032768499,78.805784285238602,21.388561306174001,90.814035118040906,22.636162620895501,17.613593041445,74.6109601985289],"marker":{"colorbar":{"title":"Income","ticklen":2},"cmin":17.613593041445,"cmax":99.917172611438104,"colorscale":[["0","rgba(68,1,84,1)"],["0.0416666666666667","rgba(70,19,97,1)"],["0.0833333333333333","rgba(72,32,111,1)"],["0.125","rgba(71,45,122,1)"],["0.166666666666667","rgba(68,58,128,1)"],["0.208333333333333","rgba(64,70,135,1)"],["0.25","rgba(60,82,138,1)"],["0.291666666666667","rgba(56,93,140,1)"],["0.333333333333333","rgba(49,104,142,1)"],["0.375","rgba(46,114,142,1)"],["0.416666666666667","rgba(42,123,142,1)"],["0.458333333333333","rgba(38,133,141,1)"],["0.5","rgba(37,144,140,1)"],["0.541666666666667","rgba(33,154,138,1)"],["0.583333333333333","rgba(39,164,133,1)"],["0.625","rgba(47,174,127,1)"],["0.666666666666667","rgba(53,183,121,1)"],["0.708333333333333","rgba(79,191,110,1)"],["0.75","rgba(98,199,98,1)"],["0.791666666666667","rgba(119,207,85,1)"],["0.833333333333333","rgba(147,214,70,1)"],["0.875","rgba(172,220,52,1)"],["0.916666666666667","rgba(199,225,42,1)"],["0.958333333333333","rgba(226,228,40,1)"],["1","rgba(253,231,37,1)"]],"showscale":false,"color":[99.917172611438104,92.579134855529006,34.678727152087397,78.702806235369493,68.009921647155096,71.504485381431806,87.970466993911501,79.811029833125502,90.006327108579995,45.655529499736403,31.913807937129501,96.282996802286902,27.982504900060299,66.601792415136998,41.531992420147802,89.00070081522,28.8163007592387,57.681694257360498,70.105096042445695,98.834011543544705,74.704699197689095,53.532105628303398,72.078923665519099,18.570665032768499,78.805784285238602,21.388561306174001,90.814035118040906,22.636162620895501,17.613593041445,74.6109601985289],"size":5,"line":{"colorbar":{"title":"","ticklen":2},"cmin":17.613593041445,"cmax":99.917172611438104,"colorscale":[["0","rgba(68,1,84,1)"],["0.0416666666666667","rgba(70,19,97,1)"],["0.0833333333333333","rgba(72,32,111,1)"],["0.125","rgba(71,45,122,1)"],["0.166666666666667","rgba(68,58,128,1)"],["0.208333333333333","rgba(64,70,135,1)"],["0.25","rgba(60,82,138,1)"],["0.291666666666667","rgba(56,93,140,1)"],["0.333333333333333","rgba(49,104,142,1)"],["0.375","rgba(46,114,142,1)"],["0.416666666666667","rgba(42,123,142,1)"],["0.458333333333333","rgba(38,133,141,1)"],["0.5","rgba(37,144,140,1)"],["0.541666666666667","rgba(33,154,138,1)"],["0.583333333333333","rgba(39,164,133,1)"],["0.625","rgba(47,174,127,1)"],["0.666666666666667","rgba(53,183,121,1)"],["0.708333333333333","rgba(79,191,110,1)"],["0.75","rgba(98,199,98,1)"],["0.791666666666667","rgba(119,207,85,1)"],["0.833333333333333","rgba(147,214,70,1)"],["0.875","rgba(172,220,52,1)"],["0.916666666666667","rgba(199,225,42,1)"],["0.958333333333333","rgba(226,228,40,1)"],["1","rgba(253,231,37,1)"]],"showscale":false,"color":[99.917172611438104,92.579134855529006,34.678727152087397,78.702806235369493,68.009921647155096,71.504485381431806,87.970466993911501,79.811029833125502,90.006327108579995,45.655529499736403,31.913807937129501,96.282996802286902,27.982504900060299,66.601792415136998,41.531992420147802,89.00070081522,28.8163007592387,57.681694257360498,70.105096042445695,98.834011543544705,74.704699197689095,53.532105628303398,72.078923665519099,18.570665032768499,78.805784285238602,21.388561306174001,90.814035118040906,22.636162620895501,17.613593041445,74.6109601985289]}},"type":"scatter3d","mode":"markers","frame":null},{"x":[10,21.586206896551701],"y":[20,187.586206896552],"type":"scatter3d","mode":"markers","opacity":0,"hoverinfo":"none","showlegend":false,"marker":{"colorbar":{"title":"Income","ticklen":2,"len":0.5,"lenmode":"fraction","y":1,"yanchor":"top"},"cmin":17.613593041445,"cmax":99.917172611438104,"colorscale":[["0","rgba(68,1,84,1)"],["0.0416666666666667","rgba(70,19,97,1)"],["0.0833333333333333","rgba(72,32,111,1)"],["0.125","rgba(71,45,122,1)"],["0.166666666666667","rgba(68,58,128,1)"],["0.208333333333333","rgba(64,70,135,1)"],["0.25","rgba(60,82,138,1)"],["0.291666666666667","rgba(56,93,140,1)"],["0.333333333333333","rgba(49,104,142,1)"],["0.375","rgba(46,114,142,1)"],["0.416666666666667","rgba(42,123,142,1)"],["0.458333333333333","rgba(38,133,141,1)"],["0.5","rgba(37,144,140,1)"],["0.541666666666667","rgba(33,154,138,1)"],["0.583333333333333","rgba(39,164,133,1)"],["0.625","rgba(47,174,127,1)"],["0.666666666666667","rgba(53,183,121,1)"],["0.708333333333333","rgba(79,191,110,1)"],["0.75","rgba(98,199,98,1)"],["0.791666666666667","rgba(119,207,85,1)"],["0.833333333333333","rgba(147,214,70,1)"],["0.875","rgba(172,220,52,1)"],["0.916666666666667","rgba(199,225,42,1)"],["0.958333333333333","rgba(226,228,40,1)"],["1","rgba(253,231,37,1)"]],"showscale":true,"color":[17.613593041445,99.917172611438104],"line":{"color":"rgba(255,127,14,1)"}},"z":[17.613593041445,99.917172611438104],"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<ul>
+<li><p>Y. LeCun, B. Boser, J. S. Denker, D. Henderson, R. E. Howard, W. Hubbard, L. D. Jackel; <em>Backpropagation Applied to Handwritten Zip Code Recognition.</em> Neural Comput 1989; 1 (4): 541–551. doi: <a href="https://doi.org/10.1162/neco.1989.1.4.541" class="uri">https://doi.org/10.1162/neco.1989.1.4.541</a></p></li>
+<li><p>James, G., Witten, D., Hastie, T., &amp; Tibshirani, R. (2013). <em>An Introduction to Statistical Learning</em> 2nd Ed. Springer New York. doi:<a href="https://doi.org/10.1007/978-1-4614-7138-7" class="uri">https://doi.org/10.1007/978-1-4614-7138-7</a></p></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

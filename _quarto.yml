@@ -2,11 +2,12 @@ project:
   type: website
 
 website:
-  title: "Introduction to machine learning"
+  title: "Introduction to DS/ML"
   navbar:
     left:
       - href: index.qmd
         text: Home
+        icon: home
       - href: about.qmd
         text: 'Acerca de'
       - href: slides.qmd
@@ -15,6 +16,12 @@ website:
       - icon: linkedin
         href: https://linkedin.com/in/vicmanr90/
         text: LinkedIn de Víctor Mario Noble Ramos
+  sidebar:
+    - id: intro
+      collapse-level: 1
+      style: floating
+      contents: 
+        - docs/intro/intro.qmd
 
 format:
   html:

@@ -1,0 +1,522 @@
+---
+title: "Introduction to the field"
+author: "Victor Mario Noble Ramos, MSc."
+subtitle: "Introduction to Data Science I2DS"
+abstract: "In this lesson we discover some of the important concepts, evolution and examples of the application of the data science discipline"
+date: "`r Sys.Date()`"
+# format: 
+#   html:
+#     # scrollable: true
+#     code-overflow: wrap
+#     code-block-bg: true
+#     code-block-border-left: "#31BAE9"
+#     code-line-numbers: true
+#     toc: true
+#     toc-depth: 3
+#     toc-expand: true
+#     toc-title: "Content (*Contenido*)"
+#     toc-location: left
+#     title-block-banner: "#11889ccc"
+#     number-sections: true
+#     embed-resources: true
+#     css: styles.css
+---
+
+```{r echo=FALSE}
+rand_seed = 1234567890
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
+```
+
+# Introduction to Data Science {.unnumbered}
+
+# Data Science concepts
+
+Let us define some concepts:
+
+## Data Science and related disciplines
+
+Apart from mathematics and statistics...
+
+**Artificial intelligence** Field of study that focus on the theory, mechanisms and processes of human intelligence emulation. It is commonly said that it started in 1956 with the proposition of the *perceptron,* a simplified abstraction model of a biological neuron, by [Frank Rosenblatt](https://en.wikipedia.org/wiki/Frank_Rosenblatt "Frank Rosenblatt wiki").
+
+**Machine learning:** Field of AI that comprises the models and forms of computer's AI models training and deployment. Machine learning algorithms are the result of the mixing computer sciences and mathematics and statistics
+
+**Statistical learning:** Subfield of statistics that focus on models and their interpretability. Fuzzy line divides it from the Machine Learning.
+
+**Data Science:** Field of study concentrated on the tools, mechanisms and processes to transform *data* into useful *information*, decision-making tools and decision-making support tools. DS shares some of the AI techniques and tools for this purpose.
+
+<!-- ::: {#fig-elephant} -->
+<!-- [![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Elephant_Diversity.jpg/1920px-Elephant_Diversity.jpg)](https://en.wikipedia.org/wiki/Elephant) -->
+
+<!-- This caption includes a link to [a webpage](https://en.wikipedia.org/wiki/Elephant). Also, click the image to try out the application. -->
+<!-- ::: -->
+
+::: {#fig-DSML}
+
+[![](Data_Science_vs._Machine_Learning.png)](https://www.coursera.org/articles/data-science-vs-machine-learning)
+
+Data Science and Machine Learning. Source: [Coursera DS vs ML](https://www.coursera.org/articles/data-science-vs-machine-learning)
+:::
+
+## Data versus information
+
+In *information theory* we define **data** as some description of elements or properties that are related to a real or abstract entity.
+
+Examples of data:
+
+-   10,
+
+-   "pedro",
+
+-   "3.1415",
+
+-   "https://youtu.be/ja1sXvNCyO0", etc.
+
+The collection of all data related to an entity in particular is called: **entry**, **registry**, **row**, **observation** or **individual**, depending on the context. The organization of data of several entities, means, all the registries, of the same type is called ***dataset***. A dataset can be presented in several forms, for example in a table form or a dictionary form. Each of these forms can be called a ***data structure***.
+
+One popular data structure is de '***data frame***' used in most of the programming languages for the data treatment and development and avaliation of the DS models and algorithms.
+
+On the other hand '***information***' is a more difficult construct. It arises on what the data is telling us of the entity or group of entities under study.
+
+Gathering information is harder than gathering data.
+
+Examples of data:
+
+| Name  | Age | Score | Country |
+|-------|-----|-------|---------|
+| Ana   | 18  | 8     | Brazil  |
+| Pedro | 19  | 7     | Brazil  |
+| Luisa | 19  | 4     | Brazil  |
+
+: Example of data in a table form.
+
+*What this data tell us?*
+
+Example of information:
+
+*"Ana, Pedro and Luisa are DS students from Brazil, Ana and Pedro have passed the DS course."*
+
+Note that the information needs a ***context*** to have a complete sense.
+
+The context is also information and also a complement to the data in the same way the data serves as a complement to the context to complete all the information.
+
+Also the ***relationship*** between the context and the data gives us some extra information. For example, the fact the entities of the dataset are students mean that the scores shown are grades of the DS course, also we can say that a grading of 4 makes the student to fail the course and that the bound between passing or failing the course is probably 5 or 6. From the age of the students we could say they are students of a bachelors degree and not undergraduate education.
+
+
+# Examples of DS applications
+
+## Nothing new: ML on the news
+
+-   Read the [Wikipedia article](https://en.wikipedia.org/wiki/History_of_artificial_intelligence "Wikipedia article on the history of AI") on the history of artificial intelligence.
+
+-   Data Science started before it had a name assigned: In 1989 LeCun, Y. and other scientists published a [paper](https://proceedings.neurips.cc/paper_files/paper/1989/file/53c3bce66e43be4f209556518c2fcb54-Paper.pdf "Handwritten Digit Recognition with a Back-Propagation Network") about the *backpropagation* applied to character recognition. The paper has 5701 citations.
+
+-   In 2011 IBM Watson beat 2 human players in the Jeopardy!. After more and more improvement, Watson had in 2012 the firs commercial application. Today IBM offers Watson as a set of AI and ML tools. The division of Watson Health was sold in 2022. See the [New York Times article](https://www.nytimes.com/2021/07/16/technology/what-happened-ibm-watson.html) of the Watson system.
+
+-   In 2012 Statistician Nate Silver accurately predicted the result of the US Senate election.
+
+-   Starting from 2015 we have seen an explosion of ML technologies:
+
+
+::: {#fig-DSML}
+
+[![](AI-performance_Dynabench-paper-2048x921.png)]()
+
+[![](ai-timeline-2048x518.png)]()
+
+Machine Learning capabilities evolution. Source: [Our world in data](https://ourworldindata.org/brief-history-of-ai)
+:::
+
+- What is coming?
+
+
+## Data Science applications
+
+*Taken from statistical learning [EDX course](https://www.edx.org/course/statistical-learning)*
+
+- **Prostate cancer risk factor indentifying.**
+
+![Pair-wise scatter plot on prostate cancer data](prostate_cancer.png)
+
+- **Bell zipcode handwritten recognition**
+
+![Handwritten digits](handwritten_digits.png)
+
+- **Fashion MNIST**
+
+![Fashion recognition](fashion.png)
+
+- **Heart attack prediction based on family and socio-demographic data**
+
+![Scatterplot on demographic data associated to heart attacks](heart_attack.png)
+
+- **Email spam detection**
+Dataset description: 4601 emails sent to an individual (named George, at HP labs, before 2000). Each is labeled as `spam` or `email`.
+
+
+```{r echo = F}
+library(kableExtra)
+george = c(0.00, 1.27)
+you = c(2.26, 1.27)
+hp = c(0.02, 0.90)
+free = c(0.52, 0.07)
+exclam = c(0.51, 0.11)
+edu = c(0.01, 0.29)
+remove = c(0.28, 0.01)
+
+spam_data = data.frame(george, you, hp, free, exclam, edu, remove)
+colnames(spam_data) = c("george", "you", "hp", "free", "!", "edu", "remove")
+rownames(spam_data) = c("spam", "email")
+
+spam_data %>%
+  kbl(escape = F) %>%
+    kable_paper("hover", full_width = F)%>%
+    kable_styling(font_size = 12, bootstrap_options = c("striped","hover"))%>%
+  column_spec(column = 1, bold=T)
+```
+
+# Data Science proyects workflow
+```{r}
+#| code-fold: TRUE
+#| fig-cap: "DS projects pathway" 
+
+
+library(DiagrammeR)
+grViz(
+"digraph {
+  compound=true;
+  graph [layout = dot]
+  
+  # define the global styles of the nodes. We can override these in box if we wish
+  node [shape = oval, fontname=verdana]
+  
+  subgraph cluster_dw {
+    color = darkslategray3;
+    fontname = Verdana;
+    
+    node [style=filled, color = darkslategray3]
+    'Data\nExploration'->'Transformation'->'Data \ncleaning'->'Feature \nengineering';
+    
+    label= 'Data Wrangling';
+  }
+  
+  subgraph cluster_eda {
+    color = lightskyblue;
+    fontname = Verdana;
+    
+    node [style=filled, color = lightskyblue]
+    'Variables \nunderstanding'->'Correlation \nanalysis' -> 'Variables filtering';
+    
+    label= 'Exploratory Data Analysis';
+  
+  }
+  
+  subgraph cluster_mod {
+    color = mediumpurple1;
+    fontname = Verdana;
+    
+    node [style=filled, color = mediumpurple1]
+    'Variable \nselection'->'Model \nselection'-> 'Model\ntraining anď tunning'->'Model\ntesting';
+    
+    label= 'Modeling';
+  
+  }
+  
+  subgraph cluster_com {
+    color = mediumorchid1;
+    fontname = Verdana;
+    
+    node [style=filled, color = mediumorchid1]
+    'Information \nselection'->'Report \npreparation'-> 'Presentation';
+    
+    label= 'Comunication';
+  
+  }
+}"
+)
+```
+
+<!-- ![DS projects pathway]() -->
+
+## Data wrangling
+
+It comprehends the process of importing the data, transforming data types and cleaning the data. The feature engineering is the process where the data is complemented with some variables engineered with some external or internal data sources.
+
+## Exploratory data analysis
+
+Is the process in which we can understand the data and to establish relationships between variables of interest. Also in this stage, we can drop some of the variables that are correlated for starting the variable selection process.
+
+## Modeling
+
+This stage comprehends the selection of the relevant variables to the problem studied, the selection of models that will allow us to predict the variable of interest and the validation and fitting of the models compared. The models that were selected with best performance will be the tools selected for the communication of the results.
+
+## Comunication
+
+It is the final stage of the process of data science, the results have to be prepared to be communicate to the stakeholders. Also the deployment of validated apps could be part of this step. 
+
+
+# Prediction and inference
+
+Consider the dataset Advertising from the Kaggle repository (200 observations). Below the first 15 entries are shown:
+
+```{r echo=FALSE, include=FALSE}
+# #Instalar para descargar datasets de kaggle (si no está instalado)
+# install.packages(c("devtools"))
+# install.packages("readr")
+# devtools::install_github("ldurazo/kaggler")
+```
+
+```{r echo=FALSE, include=FALSE}
+# #Cargar las librerías
+# library(kaggler)
+# 
+# #Cargar el archivo de la API
+# kgl_auth(creds_file = 'kaggle.json')
+# 
+# #Establecer el dataset a ser descargado
+# response <- kgl_datasets_download_all(owner_dataset = "ashydv/advertising-dataset")
+# 
+# #Descargar el (los) dataset
+# download.file(response[["url"]], "data/temp.zip", mode="wb")
+# 
+# #Extraer los assets
+# unzip_result <- unzip("data/temp.zip", exdir = "data/", overwrite = TRUE)
+```
+
+```{r echo=TRUE, include=FALSE}
+library(readr)
+#Cargar datos
+data <- read_csv("data/advertising.csv")
+
+#Visualizar datos (tabla)
+# View(data)
+```
+
+```{r echo=FALSE}
+library(kableExtra)
+head(data, n = 15) %>%
+  kbl(escape = F) %>%
+    kable_paper("hover", full_width = F)%>%
+    kable_styling(font_size = 12, bootstrap_options = c("striped","hover"))
+```
+
+```{r echo=FALSE}
+# # First install the package ILSR2 (second edition of the book) (if not installed)
+# install.packages("ISLR2")
+```
+
+```{r echo=FALSE}
+# # Second we can access to all the contents of the library by loading it:
+# library(ISLR2)
+# data(advertising)
+```
+
+The dataset is consists of the sales of a product in 200 different markets, along with advertising budgets for the product in three different media: TV, radio, and newspaper.
+
+It is not possible directly increase sales. On the other hand, the manufacturer can control the advertising expenditure in each of the three media.
+
+- Advertising budgets are ***input variables***, ***features***, ***predictors***, ***independent variables*** or just ***variables***; while sales is the ***output variable***, ***response*** or ***dependent variables***.
+
+Let $X_i$ the expenditure on media $i$, and $Y$ the sales amount.
+
+Let us examine the relationship between each expenditure $X_i$:
+
+**Code moment**
+```{r}
+#| code-fold: TRUE
+#| results: 'hide'
+#| layout-ncol: 3
+#| label: multiple_output
+#| column: screen-inset-right
+#| fig-height: 9
+
+# Asignar colores a cada variable
+colors <- c('TV'="blue", "Radio" = "green", "Newspaper"="red")
+
+# Función para graficar cada variable vs Sales
+plot_exp <- function(x){
+  
+  # Llamada a la función plot de la variable x vs Sales
+  plot(data[[x]], data$Sales, 
+       
+  # Título del gráfico
+  main="",#paste(x,"expenditure vs. Sales amount"), 
+  
+  # Títulos de los ejes (Vacíos para poder aumentarles el tamaño)
+  xlab="", ylab="",
+  
+  # Dándole forma al marcador (forma y color)
+  pch=18, col=colors[x], axes=F)
+  
+  # Colocar una cajita
+  box(col="black")
+  
+  # Tics de los ejes:
+  axis(1, cex.axis=2)
+  axis(2, cex.axis=2)
+  
+  # Aumentar tamaño del texto
+  # eje x
+  eje_x = paste(x,"expenditure")
+  mtext(eje_x, side=1, line=2.3, cex=2)
+  # eje y
+  mtext("Sales", side=2, line=2.3, cex=2)
+  
+  # Título del subplot
+  title = paste(x,"expenditure vs. Sales amount")
+  mtext(bquote(bold(.(title))), side=3, cex=2.1)
+}
+
+# Aplicamos la función a cada variable
+lapply(c("TV", "Radio", "Newspaper"), plot_exp)
+```
+
+It could be said that the variables show ***correlation*** in more or less degree with the response variable.
+
+Defining $X = (X_1, X_2, \ldots, X_p), we can establish then the following model:
+$$Y = f(X) + \epsilon$$
+The function $f$ is called the ***model*** and the term $\epsilon$ is called ***error*** or ***residual***. This error is twofold: the ***reducible error*** and the ***irreducible error***.
+
+The reducible error depends on the quality of the estimation of $f$, i.e. $\hat{f}\approx f$
+
+As another example let us consider the the plot of income versus years of education for 30 individuals in the `Income` data set. (*How to make this plot?*)
+
+```{r}
+#| code-fold: true
+#| layout-ncol: 2
+#| column: screen-inset-right
+#| fig-height: 9
+
+library(ggplot2)
+df_income = read.csv("Income1.csv")
+attach(df_income)
+#plot1
+plot(
+  x = df_income[["Education"]], y = Income, 
+  col = "red", 
+  pch = 19, 
+  xlab="Years of Education",
+  cex = 2,
+  cex.lab = 2,
+  cex.axis = 2
+  )
+
+#plot2
+plot(
+  x = Education, y = Income, col = "red", 
+  pch = 19, 
+  xlab = "Years of Education",
+  cex = 2,
+  cex.lab = 2,
+  cex.axis = 2
+  )
+
+# Ajustando regresión con smoothing splines
+smoothingSpline = smooth.spline(Education, Income, spar=0.7)
+lines(smoothingSpline, col='blue', lwd=2.5)
+
+#Adicionando desviaciones al gráfico
+segments(x0 = smoothingSpline$x, y0 = smoothingSpline$y, x1 = Education, y1 = Income, lwd=2)
+
+# mtext("Sales", side=2, line=2.3, cex=2)
+
+# lines(predict(loess(Income~Education, span = 0.5)), col='blue', lwd=2)
+
+# p <- ggplot(df_income, aes(x = Education, y = Income)) 
+# p <- p + geom_point(color = "red") 
+# p <- p + ggtitle("Years of education vs Income") + xlab("Years of Education") + ylab("Income")
+# p <- p + theme_light()
+# p
+```
+
+<!-- ![Invome vs years of study](Income.png) -->
+
+The `Income` data set. ***Left:*** The red dots are the observed values of *income* (in tens of thousands of dollars) and *years of education* for 30 individuals. ***Right:*** The blue curve represents the true underlying relationship between income and years of education, which is generally unknown (but is known in this case because the data were simulated). The black lines represent the error associated with each observation. Note that some errors are positive (if an observation lies above the blue curve) and some are negative (if an observation lies below the curve). Overall, these errors have approximately mean zero.
+
+Our task will be estimate $f$, or estimate the model. This is due by 2 reasons: 
+
+**1. Prediction**
+
+In many situations, a set of inputs $X$ are readily available, but the output Y cannot be easily obtained. In this setting, since the error term averages to zero, we can predict $Y$ using:
+
+$$\hat{Y}=\hat{f}(X)$$ 
+where $\hat{f}$ represents our estimate for $f$, $\hat{f}$ is often treated as a ***black box***, although there are some datasets that allow to adjust good known models.
+
+**2. Inference**
+In the other hand, we could be interested in understanding the association between $Y$ and $X_1, \ldots, X_p$. In this situation we wish to estimate $f$, but our goal is not necessarily to make predictions for $Y$. Now $\bar{f}$ cannot be treated as a black box, because we need to know its exact form.
+
+Let us expand the notion of the `Income` dataset. Let us supose there is another variable called seniority related to te experience of the person. Now the *income* can be explained by the two variables: *years of education* and *seniority*.
+
+# How do we estimate $f$?
+
+## Measurement of errors
+
+The ***error*** in data science is related to the diference of the predicted value $\hat{Y}$ due to an input $X$. The error is mathematically defined as:
+$$\epsilon = Y-\hat{Y}$$
+Note that for qualitative variables, the error will behave as a discrete (binary) variable.
+
+Our goal is to develop good estimations of the variable of interest $\hat{Y}$. Naturally the irreducible error will make our estimations imperfect but our goal is not the perfection, but the good approximation to the real observed values.
+
+**The expected value of the errors**
+
+Consider a single fit of a model. The expected value of the squared errors will be:
+$$E(\epsilon^2) = \big((f(X)-\hat{f}(X)\Big)^2 + \mbox{Var}(\epsilon)$$
+
+## Parametric and non-parametric models
+
+As said, our goal is to estimate a function $\hat{f}$ that resembles the original and unknown $f$ and use it to make predictions or inferences of $Y$ from an entry of values $X$. Several methods can be used to make this estimation. We can divide these methods *or models* into tow categories: ***parametric*** and ***non-parametric*** models.
+
+### Parametric models.
+
+The ***parametric models*** are DS models that have some values that have to be adjusted in order to establish the correct adjustment of $\hat{f}$. Parametric methods involve a two-step model-based approach.
+
+1. We assume the functional form of $f$. For example, linear, quadratic, etc. 
+
+2. After a model has been selected, we need a procedure that uses the training data to *fit* or *train* the model. In this attempt we can use the ordinary least squares method or the maximum verisimilitude method. 
+
+Example. Let us consider the `Income2` dataset. This data belong to the variables `Income`, `Years of education` and `Seniority` of a 30 individuals population. We can view the first 5 entries of the dataset.
+
+```{r}
+#| code-fold: TRUE
+#| warning: false
+inc2 = read.csv('Income2.csv')
+kbl(head(inc2, n=5), escape = F) %>%
+    kable_paper("hover", full_width = F)%>%
+    kable_styling(font_size = 12, bootstrap_options = c("striped","hover"))
+```
+And we can view a scatter plot of this data:
+
+***Static graphic:***
+```{r}
+#| code-fold: true
+#| warning: false
+attach(inc2)
+library(rgl)
+plot3d(x = Education, y = Seniority, z = Income, type= "p", size=.75, col = "red")
+# rgl.bbox(color="grey99", emission = "grey")
+```
+
+***A one more sophisticated:***
+```{r}
+#| code-fold: true
+#| warning: false
+
+library(plotly)
+# plot_ly(inc2, aes(x = Education, y = Seniority, z= Income, type="scatter3d", mode="markers", color = Income))
+fig <- plot_ly(mtcars, x = ~Education, y = ~Seniority, z = ~Income, color = ~Income, marker = list(size=5))
+fig <- fig %>% add_markers()
+fig <- fig %>% layout(scene = list(xaxis = list(title = 'Years of Education'),
+                     yaxis = list(title = 'Seniority'),
+                     zaxis = list(title = 'Income')))
+
+fig
+```
+
+
+
+# References
+
+- Y. LeCun, B. Boser, J. S. Denker, D. Henderson, R. E. Howard, W. Hubbard, L. D. Jackel; *Backpropagation Applied to Handwritten Zip Code Recognition.* Neural Comput 1989; 1 (4): 541--551. doi: <https://doi.org/10.1162/neco.1989.1.4.541>
+
+- James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013). *An Introduction to Statistical Learning* 2nd Ed. Springer New York. doi:<https://doi.org/10.1007/978-1-4614-7138-7>
+
