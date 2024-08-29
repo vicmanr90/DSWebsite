@@ -159,5 +159,40 @@
     "title": "Introduction to the field",
     "section": "Parametric and non-parametric models",
     "text": "Parametric and non-parametric models\nAs said, our goal is to estimate a function \\(\\hat{f}\\) that resembles the original and unknown \\(f\\) and use it to make predictions or inferences of \\(Y\\) from an entry of values \\(X\\). Several methods can be used to make this estimation. We can divide these methods or models into tow categories: parametric and non-parametric models.\n\nParametric models.\nThe parametric models are DS models that have some values that have to be adjusted in order to establish the correct adjustment of \\(\\hat{f}\\). Parametric methods involve a two-step model-based approach.\n\nWe assume the functional form of \\(f\\). For example, linear, quadratic, etc.\nAfter a model has been selected, we need a procedure that uses the training data to fit or train the model. In this attempt we can use the ordinary least squares method or the maximum verisimilitude method.\n\nExample. Let us consider the Income2 dataset. This data belong to the variables Income, Years of education and Seniority of a 30 individuals population. We can view the first 5 entries of the dataset.\n\n\nCode\ninc2 = read.csv('Income2.csv')\nkbl(head(inc2, n=5), escape = F) %&gt;%\n    kable_paper(\"hover\", full_width = F)%&gt;%\n    kable_styling(font_size = 12, bootstrap_options = c(\"striped\",\"hover\"))\n\n\n\n\n\nX\nEducation\nSeniority\nIncome\n\n\n\n\n1\n21.58621\n113.1034\n99.91717\n\n\n2\n18.27586\n119.3103\n92.57913\n\n\n3\n12.06897\n100.6897\n34.67873\n\n\n4\n17.03448\n187.5862\n78.70281\n\n\n5\n19.93103\n20.0000\n68.00992\n\n\n\n\n\n\n\nAnd we can view a scatter plot of this data:\nStatic graphic:\n\n\nCode\nattach(inc2)\nlibrary(rgl)\nplot3d(x = Education, y = Seniority, z = Income, type= \"p\", size=.75, col = \"red\")\n# rgl.bbox(color=\"grey99\", emission = \"grey\")\n\n\nA one more sophisticated:\n\n\nCode\nlibrary(plotly)\n# plot_ly(inc2, aes(x = Education, y = Seniority, z= Income, type=\"scatter3d\", mode=\"markers\", color = Income))\nfig &lt;- plot_ly(mtcars, x = ~Education, y = ~Seniority, z = ~Income, color = ~Income, marker = list(size=5))\nfig &lt;- fig %&gt;% add_markers()\nfig &lt;- fig %&gt;% layout(scene = list(xaxis = list(title = 'Years of Education'),\n                     yaxis = list(title = 'Seniority'),\n                     zaxis = list(title = 'Income')))\n\nfig"
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#course-presentation-1",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html#course-presentation-1",
+    "title": "Contextualization and contextualization",
+    "section": "",
+    "text": "Welcome to introduction to Machine Learning: algorithms and theory!"
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#presentation",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html#presentation",
+    "title": "Contextualization and contextualization",
+    "section": "",
+    "text": "Industrial engineer with a master in Production Engineering from Universidade Federal de São Carlos - UFSCar.\n+10 years of experience in teaching and academic research.\nGraduated with honors: DS4A - Correlation One & MINTIC\nResearch topics: Operations research, Data Science, Engineering education.\n\n\n. . .\nWhat about you?"
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#course-content",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html#course-content",
+    "title": "Contextualization and contextualization",
+    "section": "",
+    "text": "Course objective:\n\n\nTo provide students with a solid understanding of the fundamental principles of machine learning, from data preparation and cleaning to the implementation and evaluation of basic models.\n. . .\n\n\n\n\n\nGeneralities of the field\nData preparation\nData visualization\nML models\nCommon challenges"
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#generalities-of-the-field",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html#generalities-of-the-field",
+    "title": "Contextualization and contextualization",
+    "section": "Generalities of the field",
+    "text": "Generalities of the field\nGoal\nContents"
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html",
+    "title": "Contextualization and contextualization",
+    "section": "",
+    "text": "Welcome to introduction to Machine Learning: algorithms and theory!\n\n\n\n\n\n\n\nIndustrial engineer with a master in Production Engineering from Universidade Federal de São Carlos - UFSCar.\n+10 years of experience in teaching and academic research.\nGraduated with honors: DS4A - Correlation One & MINTIC\nResearch topics: Operations research, Data Science, Engineering education.\n\n\n. . .\nWhat about you?\n\n\n\n\nCourse objective:\n\n\nTo provide students with a solid understanding of the fundamental principles of machine learning, from data preparation and cleaning to the implementation and evaluation of basic models.\n. . .\n\n\n\n\n\nGeneralities of the field\nData preparation\nData visualization\nML models\nCommon challenges"
   }
 ]
