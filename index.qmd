@@ -4,7 +4,6 @@ title: "Introduction to machine learning"
 
 Víctor Mario Noble Ramos, MSc.
 
-This is my microsite.
+In this course we will be learning some of the most used and well known techniques for machine learning or statistical learning.
 
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Welcome and enjoy.

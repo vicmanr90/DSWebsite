@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Introduction to machine learning",
     "section": "",
-    "text": "Víctor Mario Noble Ramos, MSc.\nThis is my microsite.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Víctor Mario Noble Ramos, MSc.\nIn this course we will be learning some of the most used and well known techniques for machine learning or statistical learning.\nWelcome and enjoy."
   },
   {
     "objectID": "about.html",
@@ -165,34 +165,139 @@
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#course-presentation-1",
     "title": "Contextualization and contextualization",
     "section": "",
-    "text": "Welcome to introduction to Machine Learning: algorithms and theory!"
+    "text": "To meet each other.\nTo explain the course objective, context and contents.\nTo explore the resources we will be using.\nTo know how the evaluation will be done.\nTo start!"
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#presentation",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#presentation",
     "title": "Contextualization and contextualization",
     "section": "",
-    "text": "Industrial engineer with a master in Production Engineering from Universidade Federal de São Carlos - UFSCar.\n+10 years of experience in teaching and academic research.\nGraduated with honors: DS4A - Correlation One & MINTIC\nResearch topics: Operations research, Data Science, Engineering education.\n\n\n. . .\nWhat about you?"
+    "text": "Industrial engineer with a master in Production Engineering from Universidade Federal de São Carlos - UFSCar.\n+10 years of experience in teaching and academic research.\nGraduated with honors: DS4A - Correlation One & MINTIC\nResearch topics: Operations research, Data Science, Engineering education.\n\n\n. . .\n\n\n\nWhat about you?"
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#course-content",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#course-content",
     "title": "Contextualization and contextualization",
     "section": "",
-    "text": "Course objective:\n\n\nTo provide students with a solid understanding of the fundamental principles of machine learning, from data preparation and cleaning to the implementation and evaluation of basic models.\n. . .\n\n\n\n\n\nGeneralities of the field\nData preparation\nData visualization\nML models\nCommon challenges"
+    "text": "Course objective:\n\n\nTo provide students with a solid understanding of the fundamental principles of machine learning, from data preparation and cleaning to the implementation and evaluation of basic models.\n. . .\n\n\n\n\n\nGeneralities of the field\nData preparation, EDA and visualization\nML models\nCommon challenges"
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#generalities-of-the-field",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#generalities-of-the-field",
     "title": "Contextualization and contextualization",
-    "section": "Generalities of the field",
-    "text": "Generalities of the field\nGoal\nContents"
+    "section": "",
+    "text": "To know and explore different concepts, history and the context of the Data Sciences and the Machine Learning field, as well as to refresh previous notions of the discipline.\n. . .\n\n\n\n\n\nConcepts: Machine learning, Statistical learning, Deep learning, Artificial intelligence, Data science, etc.\nImportance and history of the field.\nApplications"
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html",
     "title": "Contextualization and contextualization",
     "section": "",
-    "text": "Welcome to introduction to Machine Learning: algorithms and theory!\n\n\n\n\n\n\n\nIndustrial engineer with a master in Production Engineering from Universidade Federal de São Carlos - UFSCar.\n+10 years of experience in teaching and academic research.\nGraduated with honors: DS4A - Correlation One & MINTIC\nResearch topics: Operations research, Data Science, Engineering education.\n\n\n. . .\nWhat about you?\n\n\n\n\nCourse objective:\n\n\nTo provide students with a solid understanding of the fundamental principles of machine learning, from data preparation and cleaning to the implementation and evaluation of basic models.\n. . .\n\n\n\n\n\nGeneralities of the field\nData preparation\nData visualization\nML models\nCommon challenges"
+    "text": "To meet each other.\nTo explain the course objective, context and contents.\nTo explore the resources we will be using.\nTo know how the evaluation will be done.\nTo start!\n\n\n\n\n\n\n\n\n\n\nIndustrial engineer with a master in Production Engineering from Universidade Federal de São Carlos - UFSCar.\n+10 years of experience in teaching and academic research.\nGraduated with honors: DS4A - Correlation One & MINTIC\nResearch topics: Operations research, Data Science, Engineering education.\n\n\n. . .\n\n\n\nWhat about you?\n\n\n\n\nCourse objective:\n\n\nTo provide students with a solid understanding of the fundamental principles of machine learning, from data preparation and cleaning to the implementation and evaluation of basic models.\n. . .\n\n\n\n\n\nGeneralities of the field\nData preparation, EDA and visualization\nML models\nCommon challenges\n\n\n\n\n\n\n\n\nTo know and explore different concepts, history and the context of the Data Sciences and the Machine Learning field, as well as to refresh previous notions of the discipline.\n. . .\n\n\n\n\n\nConcepts: Machine learning, Statistical learning, Deep learning, Artificial intelligence, Data science, etc.\nImportance and history of the field.\nApplications\n\n\n\n\n\n\n\n\nTo know and explore different concepts, history and the context of the Data Sciences and the Machine Learning field, as well as to refresh previous notions of the discipline.\n\n\n\n\n\nRefresher of statistics\n\nRandom variables and data types\nDescriptive statistics\nProbability distributions\n\n\n\n\n\n\n\n\n\nTo know and explore different concepts, history and the context of the Data Sciences and the Machine Learning field, as well as to refresh previous notions of the discipline.\n\n\n\n\n\nRefresher of programming\n\nData structures: the dataframe, series\nControl flow statements\nWork with libraries (modules)\n\n\n\n\n\n\n\n\n\nTo teach to the students how to prepare and clean the data as well as how to explore and understand the data before applying ML models.\n\n\n\n\n\n\nIntroduction to pandas.\nData importing, storage and file formats.\nHandling missing values, error detection, and correction.\nData normalization and standardization.\nFeature engineering: creation and selection of features.\n\n\n\n\n\n\n\n\nTo teach to the students how to prepare and clean the data as well as how to explore and understand the data before applying ML models.\n\n\n\n\n\n\nImporting and merging data from different tables [and query language between tables (Optional)].\nReshaping and pivoting.\nString manipulation.\n\n\n\n\n\n\n\n\nTo teach to the students how to prepare and clean the data as well as how to explore and understand the data before applying ML models.\n\n\n\n\n\n\nPlotting with matplotlib\nOther libraries for plotting\nDescriptive univariate statistics and probability distributions.\nOutliers identification and handling.\nBivariate and multivariate relations (Correlation matrix)\nDimensionality reduction.\nPreliminary hypotheses testing.\n\n\n\n\n\n\n\n\nTo comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\n\n\n\n\n\n\nRegression and classification problems\n\nOverview and refresher of linear regression \nOverview and refresher of logistic regression\nLinear model selection and regularization\n\n\n\n\n\n\n\n\n\nTo comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\n\n\n\n\n\n\nExtensions of linear-based methods\n\nPolynomial regression\nStep functions\nRegression splines\nSmoothing splines\n\n\n\n\n\n\n\n\n\nTo comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\n\n\n\n\n\n\nTree-based methods\nSupport vector machines\nIntroduction to deep learning\n\n\n\n\n\n\n\n\nTo comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\n\n\n\n\n\n\nFundamentals and problem statement\nTechniques\n\nK-means clustering\nHierarchical clustering\n\n\n\n\n\n\n\n\n\nTo comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\n\n\n\n\n\n\nHigh dimensional data\nUnbalanced data\nUnlabeled data\nOverfitting\nClosing remarks\n\n\n\n\n\n\nThe course will be evaluated by three types of activities:\n\n\nHomework socialization (40%)\nMidterm exam (30%)\nFinal exam (30%)\n\n\n\n\n\nWe will be using the follwing resources. All are free!\n\n\nCintia (Unicor)\nGoogle colab\nJupyter notebooks\nKaggle\n\n\n\n\n\n\nJames, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An Introduction to Statistical Learning (2nd ed.). Springer.\nHastie, T., Tibshirani, R., & Friedman, J. (2009). The Elements of Statistical Learning. Springer New York. https://doi.org/10.1007/978-0-387-84858-7\nGéron, A. (2023). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (3rd ed.). O’Reilly Media Inc.\nMcKinney, W. (2021). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython (3rd ed.). O’Reilly Media.\nVicente Cestero, E., & Mateos Caballero, A. (2023). Inteligencia Artificial: Fundamentos matemáticos, algorítmicos y metodológicos. España: Eloy Vicente Cestero. ISBN 978-84-09-46911-6.\nBerzal, F. (2018). Redes Neuronales & Deep Learning. España. Fernando Berzal. ISBN 1-7312-6538-7"
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#generalities-of-the-field-1",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html#generalities-of-the-field-1",
+    "title": "Contextualization and contextualization",
+    "section": "",
+    "text": "To know and explore different concepts, history and the context of the Data Sciences and the Machine Learning field, as well as to refresh previous notions of the discipline.\n\n\n\n\n\nRefresher of statistics\n\nRandom variables and data types\nDescriptive statistics\nProbability distributions"
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#generalities-of-the-field-2",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html#generalities-of-the-field-2",
+    "title": "Contextualization and contextualization",
+    "section": "",
+    "text": "To know and explore different concepts, history and the context of the Data Sciences and the Machine Learning field, as well as to refresh previous notions of the discipline.\n\n\n\n\n\nRefresher of programming\n\nData structures: the dataframe, series\nControl flow statements\nWork with libraries (modules)"
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#data-preparation-eda-and-visualization",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html#data-preparation-eda-and-visualization",
+    "title": "Contextualization and contextualization",
+    "section": "",
+    "text": "To teach to the students how to prepare and clean the data as well as how to explore and understand the data before applying ML models.\n\n\n\n\n\n\nIntroduction to pandas.\nData importing, storage and file formats.\nHandling missing values, error detection, and correction.\nData normalization and standardization.\nFeature engineering: creation and selection of features."
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#data-preparation-eda-and-visualization-1",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html#data-preparation-eda-and-visualization-1",
+    "title": "Contextualization and contextualization",
+    "section": "",
+    "text": "To teach to the students how to prepare and clean the data as well as how to explore and understand the data before applying ML models.\n\n\n\n\n\n\nImporting and merging data from different tables [and query language between tables (Optional)].\nReshaping and pivoting.\nString manipulation."
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#data-preparation-eda-and-visualization-2",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html#data-preparation-eda-and-visualization-2",
+    "title": "Contextualization and contextualization",
+    "section": "",
+    "text": "To teach to the students how to prepare and clean the data as well as how to explore and understand the data before applying ML models.\n\n\n\n\n\n\nPlotting with matplotlib\nOther libraries for plotting\nDescriptive univariate statistics and probability distributions.\nOutliers identification and handling.\nBivariate and multivariate relations (Correlation matrix)\nDimensionality reduction.\nPreliminary hypotheses testing."
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#ml-models",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html#ml-models",
+    "title": "Contextualization and contextualization",
+    "section": "",
+    "text": "To comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\n\n\n\n\n\n\nRegression and classification problems\n\nOverview and refresher of linear regression \nOverview and refresher of logistic regression\nLinear model selection and regularization"
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#ml-models-1",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html#ml-models-1",
+    "title": "Contextualization and contextualization",
+    "section": "",
+    "text": "To comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\n\n\n\n\n\n\nExtensions of linear-based methods\n\nPolynomial regression\nStep functions\nRegression splines\nSmoothing splines"
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#ml-models-2",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html#ml-models-2",
+    "title": "Contextualization and contextualization",
+    "section": "",
+    "text": "To comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\n\n\n\n\n\n\nTree-based methods\nSupport vector machines\nIntroduction to deep learning"
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#ml-models-3",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html#ml-models-3",
+    "title": "Contextualization and contextualization",
+    "section": "",
+    "text": "To comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\n\n\n\n\n\n\nFundamentals and problem statement\nTechniques\n\nK-means clustering\nHierarchical clustering"
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#common-challenges-and-final-remarks",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html#common-challenges-and-final-remarks",
+    "title": "Contextualization and contextualization",
+    "section": "",
+    "text": "To comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\n\n\n\n\n\n\nHigh dimensional data\nUnbalanced data\nUnlabeled data\nOverfitting\nClosing remarks"
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#evaluation",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html#evaluation",
+    "title": "Contextualization and contextualization",
+    "section": "",
+    "text": "The course will be evaluated by three types of activities:\n\n\nHomework socialization (40%)\nMidterm exam (30%)\nFinal exam (30%)"
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#resources",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html#resources",
+    "title": "Contextualization and contextualization",
+    "section": "",
+    "text": "We will be using the follwing resources. All are free!\n\n\nCintia (Unicor)\nGoogle colab\nJupyter notebooks\nKaggle"
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#references",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html#references",
+    "title": "Contextualization and contextualization",
+    "section": "",
+    "text": "James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An Introduction to Statistical Learning (2nd ed.). Springer.\nHastie, T., Tibshirani, R., & Friedman, J. (2009). The Elements of Statistical Learning. Springer New York. https://doi.org/10.1007/978-0-387-84858-7\nGéron, A. (2023). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (3rd ed.). O’Reilly Media Inc.\nMcKinney, W. (2021). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython (3rd ed.). O’Reilly Media.\nVicente Cestero, E., & Mateos Caballero, A. (2023). Inteligencia Artificial: Fundamentos matemáticos, algorítmicos y metodológicos. España: Eloy Vicente Cestero. ISBN 978-84-09-46911-6.\nBerzal, F. (2018). Redes Neuronales & Deep Learning. España. Fernando Berzal. ISBN 1-7312-6538-7"
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#supervised-and-unsupervised-learning",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html#supervised-and-unsupervised-learning",
+    "title": "Contextualization and contextualization",
+    "section": "Supervised and unsupervised learning",
+    "text": "Supervised and unsupervised learning"
+  },
+  {
+    "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#unsupervised-learning",
+    "href": "docs/intro/context_and_concepts/context_and_concepts.html#unsupervised-learning",
+    "title": "Contextualization and contextualization",
+    "section": "Unsupervised learning",
+    "text": "Unsupervised learning"
   }
 ]

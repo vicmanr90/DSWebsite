@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Víctor Mario Noble Ramos, MSc.">
-<meta name="dcterms.date" content="2024-08-26">
+<meta name="dcterms.date" content="2024-08-30">
 
 <title>Introduction to DS/ML - Contextualization and contextualization</title>
 <style>
@@ -138,24 +138,87 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#course-presentation" id="toc-course-presentation" class="nav-link active" data-scroll-target="#course-presentation">Course presentation</a>
   <ul class="collapse">
-  <li><a href="#course-presentation-1" id="toc-course-presentation-1" class="nav-link" data-scroll-target="#course-presentation-1">Course presentation</a></li>
+  <li><a href="#course-presentation-1" id="toc-course-presentation-1" class="nav-link" data-scroll-target="#course-presentation-1">Course presentation</a>
+  <ul class="collapse">
+  <li><a href="#welcome-to-introduction-to-machine-learning-algorithms-and-theory" id="toc-welcome-to-introduction-to-machine-learning-algorithms-and-theory" class="nav-link" data-scroll-target="#welcome-to-introduction-to-machine-learning-algorithms-and-theory">Welcome to introduction to Machine Learning: algorithms and theory!</a></li>
+  <li><a href="#todays-sesions-purposes" id="toc-todays-sesions-purposes" class="nav-link" data-scroll-target="#todays-sesions-purposes">Today’s sesion’s purposes</a></li>
+  </ul></li>
   <li><a href="#presentation" id="toc-presentation" class="nav-link" data-scroll-target="#presentation">Presentation</a>
   <ul class="collapse">
   <li><a href="#victor-mario-noble-ramos" id="toc-victor-mario-noble-ramos" class="nav-link" data-scroll-target="#victor-mario-noble-ramos">Victor Mario Noble Ramos</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   </ul></li>
   <li><a href="#course-content" id="toc-course-content" class="nav-link" data-scroll-target="#course-content">Course content</a>
   <ul class="collapse">
   <li><a href="#goal" id="toc-goal" class="nav-link" data-scroll-target="#goal">Goal</a></li>
   <li><a href="#macrounits" id="toc-macrounits" class="nav-link" data-scroll-target="#macrounits">Macrounits</a></li>
   </ul></li>
-  <li><a href="#generalities-of-the-field" id="toc-generalities-of-the-field" class="nav-link" data-scroll-target="#generalities-of-the-field">Generalities of the field</a>
+  <li><a href="#generalities-of-the-field" id="toc-generalities-of-the-field" class="nav-link" data-scroll-target="#generalities-of-the-field">1. Generalities of the field</a>
   <ul class="collapse">
   <li><a href="#goal-1" id="toc-goal-1" class="nav-link" data-scroll-target="#goal-1">Goal</a></li>
+  <li><a href="#contents-13" id="toc-contents-13" class="nav-link" data-scroll-target="#contents-13">Contents 1/3</a></li>
+  </ul></li>
+  <li><a href="#generalities-of-the-field-1" id="toc-generalities-of-the-field-1" class="nav-link" data-scroll-target="#generalities-of-the-field-1">1. Generalities of the field</a>
+  <ul class="collapse">
+  <li><a href="#goal-2" id="toc-goal-2" class="nav-link" data-scroll-target="#goal-2">Goal</a></li>
+  <li><a href="#contents-23" id="toc-contents-23" class="nav-link" data-scroll-target="#contents-23">Contents 2/3</a></li>
+  </ul></li>
+  <li><a href="#generalities-of-the-field-2" id="toc-generalities-of-the-field-2" class="nav-link" data-scroll-target="#generalities-of-the-field-2">1. Generalities of the field</a>
+  <ul class="collapse">
+  <li><a href="#goal-3" id="toc-goal-3" class="nav-link" data-scroll-target="#goal-3">Goal</a></li>
+  <li><a href="#contents-33" id="toc-contents-33" class="nav-link" data-scroll-target="#contents-33">Contents 3/3</a></li>
+  </ul></li>
+  <li><a href="#data-preparation-eda-and-visualization" id="toc-data-preparation-eda-and-visualization" class="nav-link" data-scroll-target="#data-preparation-eda-and-visualization">2. Data preparation, EDA and visualization</a>
+  <ul class="collapse">
+  <li><a href="#goal-4" id="toc-goal-4" class="nav-link" data-scroll-target="#goal-4">Goal</a></li>
+  <li><a href="#contents---2.1.-data-preparation" id="toc-contents---2.1.-data-preparation" class="nav-link" data-scroll-target="#contents---2.1.-data-preparation">Contents - 2.1. Data preparation</a></li>
+  </ul></li>
+  <li><a href="#data-preparation-eda-and-visualization-1" id="toc-data-preparation-eda-and-visualization-1" class="nav-link" data-scroll-target="#data-preparation-eda-and-visualization-1">2. Data preparation, EDA and visualization</a>
+  <ul class="collapse">
+  <li><a href="#goal-5" id="toc-goal-5" class="nav-link" data-scroll-target="#goal-5">Goal</a></li>
+  <li><a href="#contents---2.2.-data-wrangling" id="toc-contents---2.2.-data-wrangling" class="nav-link" data-scroll-target="#contents---2.2.-data-wrangling">Contents - 2.2. Data wrangling</a></li>
+  </ul></li>
+  <li><a href="#data-preparation-eda-and-visualization-2" id="toc-data-preparation-eda-and-visualization-2" class="nav-link" data-scroll-target="#data-preparation-eda-and-visualization-2">2. Data preparation, EDA and visualization</a>
+  <ul class="collapse">
+  <li><a href="#goal-6" id="toc-goal-6" class="nav-link" data-scroll-target="#goal-6">Goal</a></li>
+  <li><a href="#contents---2.3.-eda-and-visualization" id="toc-contents---2.3.-eda-and-visualization" class="nav-link" data-scroll-target="#contents---2.3.-eda-and-visualization">Contents - 2.3. EDA and visualization</a></li>
+  </ul></li>
+  <li><a href="#ml-models" id="toc-ml-models" class="nav-link" data-scroll-target="#ml-models">3. ML models</a>
+  <ul class="collapse">
+  <li><a href="#goal-7" id="toc-goal-7" class="nav-link" data-scroll-target="#goal-7">Goal</a></li>
+  <li><a href="#contents---3.1.-supervised-learning-13" id="toc-contents---3.1.-supervised-learning-13" class="nav-link" data-scroll-target="#contents---3.1.-supervised-learning-13">Contents - 3.1. Supervised learning 1/3</a></li>
+  </ul></li>
+  <li><a href="#ml-models-1" id="toc-ml-models-1" class="nav-link" data-scroll-target="#ml-models-1">3. ML models</a>
+  <ul class="collapse">
+  <li><a href="#goal-8" id="toc-goal-8" class="nav-link" data-scroll-target="#goal-8">Goal</a></li>
+  <li><a href="#contents---3.1.-supervised-learning-23" id="toc-contents---3.1.-supervised-learning-23" class="nav-link" data-scroll-target="#contents---3.1.-supervised-learning-23">Contents - 3.1. Supervised learning 2/3</a></li>
+  </ul></li>
+  <li><a href="#ml-models-2" id="toc-ml-models-2" class="nav-link" data-scroll-target="#ml-models-2">3. ML models</a>
+  <ul class="collapse">
+  <li><a href="#goal-9" id="toc-goal-9" class="nav-link" data-scroll-target="#goal-9">Goal</a></li>
+  <li><a href="#contents---3.1.-supervised-learning-33" id="toc-contents---3.1.-supervised-learning-33" class="nav-link" data-scroll-target="#contents---3.1.-supervised-learning-33">Contents - 3.1. Supervised learning 3/3</a></li>
+  </ul></li>
+  <li><a href="#ml-models-3" id="toc-ml-models-3" class="nav-link" data-scroll-target="#ml-models-3">3. ML models</a>
+  <ul class="collapse">
+  <li><a href="#goal-10" id="toc-goal-10" class="nav-link" data-scroll-target="#goal-10">Goal</a></li>
+  <li><a href="#contents---3.2.-unsupervised-learning" id="toc-contents---3.2.-unsupervised-learning" class="nav-link" data-scroll-target="#contents---3.2.-unsupervised-learning">Contents - 3.2. Unsupervised learning</a></li>
+  </ul></li>
+  <li><a href="#common-challenges-and-final-remarks" id="toc-common-challenges-and-final-remarks" class="nav-link" data-scroll-target="#common-challenges-and-final-remarks">3. Common challenges and final remarks</a>
+  <ul class="collapse">
+  <li><a href="#goal-11" id="toc-goal-11" class="nav-link" data-scroll-target="#goal-11">Goal</a></li>
   <li><a href="#contents" id="toc-contents" class="nav-link" data-scroll-target="#contents">Contents</a></li>
   </ul></li>
+  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation">Evaluation</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
+  <li><a href="#let-us-start-fundamental-concepts" id="toc-let-us-start-fundamental-concepts" class="nav-link" data-scroll-target="#let-us-start-fundamental-concepts">Let us start: Fundamental concepts</a>
+  <ul class="collapse">
+  <li><a href="#supervised-and-unsupervised-learning" id="toc-supervised-and-unsupervised-learning" class="nav-link" data-scroll-target="#supervised-and-unsupervised-learning">Supervised and unsupervised learning</a></li>
+  <li><a href="#unsupervised-learning" id="toc-unsupervised-learning" class="nav-link" data-scroll-target="#unsupervised-learning">Unsupervised learning</a></li>
   </ul></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="context_and_concepts.pdf"><i class="bi bi-file-pdf"></i>Beamer</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -179,7 +242,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 26, 2024</p>
+      <p class="date">August 30, 2024</p>
     </div>
   </div>
   
@@ -193,7 +256,21 @@ ul.task-list li input[type="checkbox"] {
 <h1>Course presentation</h1>
 <section id="course-presentation-1" class="level2">
 <h2 class="anchored" data-anchor-id="course-presentation-1">Course presentation</h2>
-<p>Welcome to introduction to Machine Learning: algorithms and theory!</p>
+<section id="welcome-to-introduction-to-machine-learning-algorithms-and-theory" class="level3 information">
+<h3 class="information anchored" data-anchor-id="welcome-to-introduction-to-machine-learning-algorithms-and-theory">Welcome to introduction to Machine Learning: algorithms and theory!</h3>
+</section>
+<section id="todays-sesions-purposes" class="level3 alert">
+<h3 class="alert anchored" data-anchor-id="todays-sesions-purposes">Today’s sesion’s purposes</h3>
+<div class="incremental">
+<ul class="incremental">
+<li>To meet each other.</li>
+<li>To explain the course objective, context and contents.</li>
+<li>To explore the resources we will be using.</li>
+<li>To know how the evaluation will be done.</li>
+<li>To start!</li>
+</ul>
+</div>
+</section>
 </section>
 <section id="presentation" class="level2">
 <h2 class="anchored" data-anchor-id="presentation">Presentation</h2>
@@ -208,6 +285,9 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </div>
 <p>. . .</p>
+</section>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"></h3>
 <p><em>What about you?</em></p>
 </section>
 </section>
@@ -221,27 +301,280 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="macrounits" class="level3 example">
 <h3 class="example anchored" data-anchor-id="macrounits">Macrounits</h3>
-<div class="incremental">
-<ul class="incremental">
+<div class="nonincremental">
+<ol type="1">
 <li>Generalities of the field</li>
-<li>Data preparation</li>
-<li>Data visualization</li>
+<li>Data preparation, EDA and visualization</li>
 <li>ML models</li>
 <li>Common challenges</li>
-</ul>
+</ol>
 </div>
 </section>
 </section>
 <section id="generalities-of-the-field" class="level2">
-<h2 class="anchored" data-anchor-id="generalities-of-the-field">Generalities of the field</h2>
+<h2 class="anchored" data-anchor-id="generalities-of-the-field">1. Generalities of the field</h2>
 <section id="goal-1" class="level3 alert">
 <h3 class="alert anchored" data-anchor-id="goal-1">Goal</h3>
+<p>To know and explore different concepts, history and the context of the Data Sciences and the Machine Learning field, as well as to refresh previous notions of the discipline.</p>
+<p>. . .</p>
+</section>
+<section id="contents-13" class="level3 example">
+<h3 class="example anchored" data-anchor-id="contents-13">Contents 1/3</h3>
+<div class="nonincremental">
+<ul>
+<li>Concepts: Machine learning, Statistical learning, Deep learning, Artificial intelligence, Data science, etc.</li>
+<li>Importance and history of the field.</li>
+<li>Applications</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="generalities-of-the-field-1" class="level2">
+<h2 class="anchored" data-anchor-id="generalities-of-the-field-1">1. Generalities of the field</h2>
+<section id="goal-2" class="level3 alert">
+<h3 class="alert anchored" data-anchor-id="goal-2">Goal</h3>
+<p>To know and explore different concepts, history and the context of the Data Sciences and the Machine Learning field, as well as to refresh previous notions of the discipline.</p>
+</section>
+<section id="contents-23" class="level3 example">
+<h3 class="example anchored" data-anchor-id="contents-23">Contents 2/3</h3>
+<div class="nonincremental">
+<ul>
+<li>Refresher of statistics
+<ul>
+<li>Random variables and data types</li>
+<li>Descriptive statistics</li>
+<li>Probability distributions</li>
+</ul></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="generalities-of-the-field-2" class="level2">
+<h2 class="anchored" data-anchor-id="generalities-of-the-field-2">1. Generalities of the field</h2>
+<section id="goal-3" class="level3 alert">
+<h3 class="alert anchored" data-anchor-id="goal-3">Goal</h3>
+<p>To know and explore different concepts, history and the context of the Data Sciences and the Machine Learning field, as well as to refresh previous notions of the discipline.</p>
+</section>
+<section id="contents-33" class="level3 example">
+<h3 class="example anchored" data-anchor-id="contents-33">Contents 3/3</h3>
+<div class="nonincremental">
+<ul>
+<li>Refresher of programming
+<ul>
+<li>Data structures: the dataframe, series</li>
+<li>Control flow statements</li>
+<li>Work with libraries (modules)</li>
+</ul></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="data-preparation-eda-and-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="data-preparation-eda-and-visualization">2. Data preparation, EDA and visualization</h2>
+<section id="goal-4" class="level3 alert">
+<h3 class="alert anchored" data-anchor-id="goal-4">Goal</h3>
+<p>To teach to the students how to prepare and clean the data as well as how to explore and understand the data before applying ML models.</p>
+</section>
+<section id="contents---2.1.-data-preparation" class="level3 example">
+<h3 class="example anchored" data-anchor-id="contents---2.1.-data-preparation">Contents - 2.1. Data preparation</h3>
+<!-- Capítulo 7 Wes Mckinney -->
+<div class="nonincremental">
+<ul>
+<li>Introduction to pandas.</li>
+<li>Data importing, storage and file formats.</li>
+<li>Handling missing values, error detection, and correction.</li>
+<li>Data normalization and standardization.</li>
+<li>Feature engineering: creation and selection of features.</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="data-preparation-eda-and-visualization-1" class="level2">
+<h2 class="anchored" data-anchor-id="data-preparation-eda-and-visualization-1">2. Data preparation, EDA and visualization</h2>
+<section id="goal-5" class="level3 alert">
+<h3 class="alert anchored" data-anchor-id="goal-5">Goal</h3>
+<p>To teach to the students how to prepare and clean the data as well as how to explore and understand the data before applying ML models.</p>
+</section>
+<section id="contents---2.2.-data-wrangling" class="level3 example">
+<h3 class="example anchored" data-anchor-id="contents---2.2.-data-wrangling">Contents - 2.2. Data wrangling</h3>
+<p><!-- Capítulo 8 Wes Mckinney --></p>
+<div class="nonincremental">
+<ul>
+<li>Importing and merging data from different tables [and query language between tables (Optional)].</li>
+<li>Reshaping and pivoting.</li>
+<li>String manipulation.</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="data-preparation-eda-and-visualization-2" class="level2">
+<h2 class="anchored" data-anchor-id="data-preparation-eda-and-visualization-2">2. Data preparation, EDA and visualization</h2>
+<section id="goal-6" class="level3 alert">
+<h3 class="alert anchored" data-anchor-id="goal-6">Goal</h3>
+<p>To teach to the students how to prepare and clean the data as well as how to explore and understand the data before applying ML models.</p>
+</section>
+<section id="contents---2.3.-eda-and-visualization" class="level3 example">
+<h3 class="example anchored" data-anchor-id="contents---2.3.-eda-and-visualization">Contents - 2.3. EDA and visualization</h3>
+<p><!-- Capítulo 8 Wes Mckinney --></p>
+<div class="nonincremental">
+<ul>
+<li>Plotting with matplotlib</li>
+<li>Other libraries for plotting</li>
+<li>Descriptive univariate statistics and probability distributions.</li>
+<li>Outliers identification and handling.</li>
+<li>Bivariate and multivariate relations (Correlation matrix)</li>
+<li>Dimensionality reduction.</li>
+<li>Preliminary hypotheses testing.</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="ml-models" class="level2">
+<h2 class="anchored" data-anchor-id="ml-models">3. ML models</h2>
+<section id="goal-7" class="level3 alert">
+<h3 class="alert anchored" data-anchor-id="goal-7">Goal</h3>
+<p>To comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.</p>
+</section>
+<section id="contents---3.1.-supervised-learning-13" class="level3 example">
+<h3 class="example anchored" data-anchor-id="contents---3.1.-supervised-learning-13">Contents - 3.1. Supervised learning 1/3</h3>
+<p><!-- ILSP --></p>
+<div class="nonincremental">
+<ul>
+<li>Regression and classification problems
+<ul>
+<li>Overview and refresher of linear regression <!-- ISLP 3 --></li>
+<li>Overview and refresher of logistic regression</li>
+<li>Linear model selection and regularization</li>
+</ul></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="ml-models-1" class="level2">
+<h2 class="anchored" data-anchor-id="ml-models-1">3. ML models</h2>
+<section id="goal-8" class="level3 alert">
+<h3 class="alert anchored" data-anchor-id="goal-8">Goal</h3>
+<p>To comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.</p>
+</section>
+<section id="contents---3.1.-supervised-learning-23" class="level3 example">
+<h3 class="example anchored" data-anchor-id="contents---3.1.-supervised-learning-23">Contents - 3.1. Supervised learning 2/3</h3>
+<p><!-- ILSP --></p>
+<div class="nonincremental">
+<ul>
+<li>Extensions of linear-based methods
+<ul>
+<li>Polynomial regression</li>
+<li>Step functions</li>
+<li>Regression splines</li>
+<li>Smoothing splines</li>
+</ul></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="ml-models-2" class="level2">
+<h2 class="anchored" data-anchor-id="ml-models-2">3. ML models</h2>
+<section id="goal-9" class="level3 alert">
+<h3 class="alert anchored" data-anchor-id="goal-9">Goal</h3>
+<p>To comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.</p>
+</section>
+<section id="contents---3.1.-supervised-learning-33" class="level3 example">
+<h3 class="example anchored" data-anchor-id="contents---3.1.-supervised-learning-33">Contents - 3.1. Supervised learning 3/3</h3>
+<p><!-- ILSP --></p>
+<div class="nonincremental">
+<ul>
+<li>Tree-based methods</li>
+<li>Support vector machines</li>
+<li>Introduction to deep learning</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="ml-models-3" class="level2">
+<h2 class="anchored" data-anchor-id="ml-models-3">3. ML models</h2>
+<section id="goal-10" class="level3 alert">
+<h3 class="alert anchored" data-anchor-id="goal-10">Goal</h3>
+<p>To comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.</p>
+</section>
+<section id="contents---3.2.-unsupervised-learning" class="level3 example">
+<h3 class="example anchored" data-anchor-id="contents---3.2.-unsupervised-learning">Contents - 3.2. Unsupervised learning</h3>
+<p><!-- ILSP --></p>
+<div class="nonincremental">
+<ul>
+<li>Fundamentals and problem statement</li>
+<li>Techniques
+<ul>
+<li>K-means clustering</li>
+<li>Hierarchical clustering</li>
+</ul></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="common-challenges-and-final-remarks" class="level2">
+<h2 class="anchored" data-anchor-id="common-challenges-and-final-remarks">3. Common challenges and final remarks</h2>
+<section id="goal-11" class="level3 alert">
+<h3 class="alert anchored" data-anchor-id="goal-11">Goal</h3>
+<p>To comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.</p>
 </section>
 <section id="contents" class="level3 example">
 <h3 class="example anchored" data-anchor-id="contents">Contents</h3>
-
-
+<p><!-- ILSP --></p>
+<div class="nonincremental">
+<ul>
+<li>High dimensional data</li>
+<li>Unbalanced data</li>
+<li>Unlabeled data</li>
+<li>Overfitting</li>
+<li>Closing remarks</li>
+</ul>
+</div>
 </section>
+</section>
+<section id="evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="evaluation">Evaluation</h2>
+<p>The course will be evaluated by three types of activities:</p>
+<div class="nonincremental">
+<ul>
+<li>Homework socialization (40%)</li>
+<li>Midterm exam (30%)</li>
+<li>Final exam (30%)</li>
+</ul>
+</div>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<p>We will be using the follwing resources. All are free!</p>
+<div class="nonincremental">
+<ul>
+<li>Cintia (Unicor)</li>
+<li>Google colab</li>
+<li>Jupyter notebooks</li>
+<li>Kaggle</li>
+</ul>
+</div>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<ul>
+<li><p><strong>James, G., Witten, D., Hastie, T., &amp; Tibshirani, R. (2021). <em>An Introduction to Statistical Learning (2nd ed.)</em>. Springer.</strong></p></li>
+<li><p>Hastie, T., Tibshirani, R., &amp; Friedman, J. (2009). <em>The Elements of Statistical Learning</em>. Springer New York. https://doi.org/10.1007/978-0-387-84858-7</p></li>
+<li><p>Géron, A. (2023). <em>Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (3rd ed.)</em>. O’Reilly Media Inc.</p></li>
+<li><p><strong>McKinney, W. (2021). <em>Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython (3rd ed.)</em>. O’Reilly Media.</strong></p></li>
+<li><p>Vicente Cestero, E., &amp; Mateos Caballero, A. (2023). <em>Inteligencia Artificial: Fundamentos matemáticos, algorítmicos y metodológicos.</em> España: Eloy Vicente Cestero. ISBN 978-84-09-46911-6.</p></li>
+<li><p>Berzal, F. (2018). <em>Redes Neuronales &amp; Deep Learning.</em> España. Fernando Berzal. ISBN 1-7312-6538-7</p></li>
+</ul>
+</section>
+</section>
+<section id="let-us-start-fundamental-concepts" class="level1">
+<h1>Let us start: Fundamental concepts</h1>
+<section id="supervised-and-unsupervised-learning" class="level2">
+<h2 class="anchored" data-anchor-id="supervised-and-unsupervised-learning">Supervised and unsupervised learning</h2>
+</section>
+<section id="unsupervised-learning" class="level2">
+<h2 class="anchored" data-anchor-id="unsupervised-learning">Unsupervised learning</h2>
+
+
 </section>
 </section>
 
