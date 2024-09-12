@@ -725,7 +725,7 @@
     "href": "docs/python_refresher/python_refresher.html#functions-and-scope",
     "title": "Python introduction/refresher",
     "section": "Functions and Scope",
-    "text": "Functions and Scope\nFunctions encapsulate reusable blocks of code.\n# Example: Defining and using functions\ndef add_numbers(x, y):\n    return x + y\n\nresult = add_numbers(3, 5)\nprint(result)  # Output: 8\nScope:\nVariables defined inside a function are local, while those outside are global.\n\\[\n\\text{def func(): \\newline \\hspace{4mm} local_variable \\newline global_variable}\n\\]"
+    "text": "Functions and Scope\nFunctions encapsulate reusable blocks of code.\n# Example: Defining and using functions\ndef add_numbers(x, y):\n    return x + y\n\nresult = add_numbers(3, 5)\nprint(result)  # Output: 8\nScope:\nVariables defined inside a function are local, while those outside are global.\ndef func(): \n    local_variable\nglobal_variable"
   },
   {
     "objectID": "docs/python_refresher/python_refresher.html#lists-tuples-dictionaries-and-sets",

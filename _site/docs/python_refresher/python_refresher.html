@@ -1327,26 +1327,26 @@ Victor Mario Noble Ramos <a href="https://orcid.org/0000-0003-4666-2096" class="
 <span id="cb8-6"><a href="#cb8-6"></a><span class="bu">print</span>(result)  <span class="co"># Output: 8</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <h3 id="scope">Scope:</h3>
 <p>Variables defined inside a function are local, while those outside are global.</p>
-<p><span class="math display">\[
-\text{def func(): \newline \hspace{4mm} local_variable \newline global_variable}
-\]</span></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="kw">def</span> func(): </span>
+<span id="cb9-2"><a href="#cb9-2"></a>    local_variable</span>
+<span id="cb9-3"><a href="#cb9-3"></a>global_variable</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="lists-tuples-dictionaries-and-sets" class="slide level2">
 <h2>Lists, Tuples, Dictionaries, and Sets</h2>
 <h3 id="lists-ordered-mutable-collection.">Lists: Ordered, mutable collection.</h3>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># Example: Lists</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a>my_list <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</span>
-<span id="cb9-3"><a href="#cb9-3"></a>my_list.append(<span class="dv">5</span>)    <span class="co"># Add an element</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="co"># Example: Lists</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a>my_list <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</span>
+<span id="cb10-3"><a href="#cb10-3"></a>my_list.append(<span class="dv">5</span>)    <span class="co"># Add an element</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <h3 id="tuples-ordered-immutable-collection.">Tuples: Ordered, immutable collection.</h3>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="co"># Example: Tuples</span></span>
-<span id="cb10-2"><a href="#cb10-2"></a>my_tuple <span class="op">=</span> (<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a><span class="co"># Example: Tuples</span></span>
+<span id="cb11-2"><a href="#cb11-2"></a>my_tuple <span class="op">=</span> (<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <h3 id="dictionaries-key-value-pairs.">Dictionaries: Key-value pairs.</h3>
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a><span class="co"># Example: Dictionary</span></span>
-<span id="cb11-2"><a href="#cb11-2"></a>my_dict <span class="op">=</span> {<span class="st">&quot;name&quot;</span>: <span class="st">&quot;Alice&quot;</span>, <span class="st">&quot;age&quot;</span>: <span class="dv">25</span>}</span>
-<span id="cb11-3"><a href="#cb11-3"></a><span class="bu">print</span>(my_dict[<span class="st">&quot;name&quot;</span>])  <span class="co"># Output: Alice</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="co"># Example: Dictionary</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a>my_dict <span class="op">=</span> {<span class="st">&quot;name&quot;</span>: <span class="st">&quot;Alice&quot;</span>, <span class="st">&quot;age&quot;</span>: <span class="dv">25</span>}</span>
+<span id="cb12-3"><a href="#cb12-3"></a><span class="bu">print</span>(my_dict[<span class="st">&quot;name&quot;</span>])  <span class="co"># Output: Alice</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <h3 id="sets-unordered-no-duplicates.">Sets: Unordered, no duplicates.</h3>
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="co"># Example: Sets</span></span>
-<span id="cb12-2"><a href="#cb12-2"></a>my_set <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">2</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a><span class="co"># Example: Sets</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a>my_set <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">2</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section class="slide level2">
 

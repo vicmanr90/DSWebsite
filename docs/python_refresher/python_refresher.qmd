@@ -162,9 +162,11 @@ print(result)  # Output: 8
 ### Scope:
 Variables defined inside a function are local, while those outside are global.
 
-$$
-\text{def func(): \newline \hspace{4mm} local_variable \newline global_variable}
-$$
+```python 
+def func(): 
+    local_variable
+global_variable
+```
 
 ---
 
