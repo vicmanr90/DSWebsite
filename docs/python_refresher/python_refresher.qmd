@@ -1,0 +1,209 @@
+---
+title: Python introduction/refresher
+subtitle: Installation, settting up, and basic use.  
+format: 
+  revealjs:
+    self-contained: true
+    theme: simple
+    fontsize: 18pt
+    fontfamily: Fira Sans
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: Victor Mario Noble Ramos
+    orcid: 0000-0003-4666-2096
+    email: victornobler@correo.unicordoba.edu.co
+    affiliations: www.unicordoba.edu.co
+  # - name: Kyle Butts
+  #   orcid: 0000-0002-9048-8059
+  #   email: kyle.butts@colorado.edu
+  #   affiliations: UC Boulder
+date: last-modified
+bibliography: refs.bib
+---
+
+
+## Goal
+
+::: {.example}
+To remember how to setup and work with python for preparing us to apply ML models and evaluate them.
+:::
+
+. . .
+
+### Contents
+
+1. Setting up `python` 
+2. 
+3. Common probability distributions and random variables
+4. Statistical inference and hypotheses testing
+
+
+# 1. Setting up python
+
+## Installation (Windows)
+
+There are several ways to get python installed in our systems.
+
+- Microsoft store
+- Python webpage 
+- Chocolatey store `choco install python --version=3.11.0`
+- Anaconda distribution
+
+In order to call python anywhere in our system, we have to add it to the system path (environment variables).
+
+### Open up python from console
+
+Run the command `python`. It will open the software for us [important note]{.alert}.
+
+
+## Variables and Data Types
+
+Variables are used to store data in Python.
+
+```python
+# Example: Defining variables
+x = 10       # Integer
+y = 3.14     # Float
+name = "Alice" # String
+is_student = True # Boolean
+```
+
+Data types: 
+- **int**: Integer
+- **float**: Floating-point number
+- **str**: String (text)
+- **bool**: Boolean (True/False)
+
+---
+
+## Basic Operations
+
+Python supports basic mathematical and logical operations.
+
+- Arithmetic operations:
+  `+, -, *, /, **` (exponentiation)
+  
+```python
+# Example: Basic operations
+a = 5
+b = 3
+sum_result = a + b    # Addition
+power = a ** b        # Exponentiation
+```
+
+- Logical operations: `==, !=, >, <, >=, <=`
+
+```python
+# Example: Logical comparison
+is_equal = (a == b)   # False
+```
+
+---
+
+## Control Structures: if-else
+
+Conditional statements allow us to make decisions in code.
+
+```python
+# Example: if-else statement
+if a > b:
+    print("a is greater than b")
+else:
+    print("a is less than or equal to b")
+```
+
+Structure:
+```python
+if condition:
+    statement(s)
+else: 
+    statement(s)
+```
+
+## Control Structures: Loops
+
+### For Loops
+Used to iterate over sequences (lists, strings, etc.).
+
+```python
+# Example: for loop
+for i in range(5):
+    print(i)
+```
+
+### While Loops
+Repeats as long as a condition is true.
+
+```python
+# Example: while loop
+counter = 0
+while counter < 5:
+    print(counter)
+    counter += 1
+```
+
+---
+
+## Functions and Scope
+
+Functions encapsulate reusable blocks of code.
+
+```python
+# Example: Defining and using functions
+def add_numbers(x, y):
+    return x + y
+
+result = add_numbers(3, 5)
+print(result)  # Output: 8
+```
+
+### Scope:
+Variables defined inside a function are local, while those outside are global.
+
+$$
+\text{def func(): \newline \hspace{4mm} local_variable \newline global_variable}
+$$
+
+---
+
+## Lists, Tuples, Dictionaries, and Sets
+
+### Lists: Ordered, mutable collection.
+
+```python
+# Example: Lists
+my_list = [1, 2, 3, 4]
+my_list.append(5)    # Add an element
+```
+
+### Tuples: Ordered, immutable collection.
+
+```python
+# Example: Tuples
+my_tuple = (1, 2, 3)
+```
+
+### Dictionaries: Key-value pairs.
+
+```python
+# Example: Dictionary
+my_dict = {"name": "Alice", "age": 25}
+print(my_dict["name"])  # Output: Alice
+```
+
+### Sets: Unordered, no duplicates.
+
+```python
+# Example: Sets
+my_set = {1, 2, 3, 2}
+```
+
+---
+
+# Summary
+
+- Variables and data types are foundational for writing Python code.
+- Python's control structures help in decision-making and repeating tasks.
+- Functions allow code reuse, while lists, tuples, dictionaries, and sets provide flexible ways to store data.

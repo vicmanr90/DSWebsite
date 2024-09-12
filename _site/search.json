@@ -164,29 +164,29 @@
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#course-presentation-1",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#course-presentation-1",
     "title": "Contextualization and contextualization",
-    "section": "",
-    "text": "To meet each other.\nTo explain the course objective, context and contents.\nTo explore the resources we will be using.\nTo know how the evaluation will be done.\nTo start!"
+    "section": "Course presentation",
+    "text": "Course presentation\nWelcome to introduction to Machine Learning: algorithms and theory!\nToday’s sesion’s purposes\n\n\nTo meet each other.\nTo explain the course objective, context and contents.\nTo explore the resources we will be using.\nTo know how the evaluation will be done.\nTo start!"
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#presentation",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#presentation",
     "title": "Contextualization and contextualization",
-    "section": "",
-    "text": "Industrial engineer with a master in Production Engineering from Universidade Federal de São Carlos - UFSCar.\n+10 years of experience in teaching and academic research.\nGraduated with honors: DS4A - Correlation One & MINTIC\nResearch topics: Operations research, Data Science, Engineering education.\n\n\n. . .\n\n\n\nWhat about you?"
+    "section": "Presentation",
+    "text": "Presentation\nVictor Mario Noble Ramos\n\n\nIndustrial engineer with a master in Production Engineering from Universidade Federal de São Carlos - UFSCar.\n+10 years of experience in teaching and academic research.\nGraduated with honors: DS4A - Correlation One & MINTIC\nResearch topics: Operations research, Data Science, Engineering education.\n\n\n. . .\n\nWhat about you?"
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#course-content",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#course-content",
     "title": "Contextualization and contextualization",
-    "section": "",
-    "text": "Course objective:\n\n\nTo provide students with a solid understanding of the fundamental principles of machine learning, from data preparation and cleaning to the implementation and evaluation of basic models.\n. . .\n\n\n\n\n\nGeneralities of the field\nData preparation, EDA and visualization\nML models\nCommon challenges"
+    "section": "Course content",
+    "text": "Course content\nCourse objective:\nGoal\nTo provide students with a solid understanding of the fundamental principles of machine learning, from data preparation and cleaning to the implementation and evaluation of basic models.\n. . .\nMacrounits\n\n\nGeneralities of the field\nData preparation, EDA and visualization\nML models\nCommon challenges"
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#generalities-of-the-field",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#generalities-of-the-field",
     "title": "Contextualization and contextualization",
-    "section": "",
-    "text": "To know and explore different concepts, history and the context of the Data Sciences and the Machine Learning field, as well as to refresh previous notions of the discipline.\n. . .\n\n\n\n\n\nConcepts: Machine learning, Statistical learning, Deep learning, Artificial intelligence, Data science, etc.\nImportance and history of the field.\nApplications"
+    "section": "1. Generalities of the field",
+    "text": "1. Generalities of the field\nGoal\nTo know and explore different concepts, history and the context of the Data Sciences and the Machine Learning field, as well as to refresh previous notions of the discipline.\n. . .\nContents 1/3\n\n\nConcepts: Machine learning, Statistical learning, Deep learning, Artificial intelligence, Data science, etc.\nImportance and history of the field.\nApplications"
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html",
@@ -199,92 +199,92 @@
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#generalities-of-the-field-1",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#generalities-of-the-field-1",
     "title": "Contextualization and contextualization",
-    "section": "",
-    "text": "To know and explore different concepts, history and the context of the Data Sciences and the Machine Learning field, as well as to refresh previous notions of the discipline.\n\n\n\n\n\nRefresher of statistics\n\nRandom variables and data types\nDescriptive statistics\nProbability distributions"
+    "section": "1. Generalities of the field",
+    "text": "1. Generalities of the field\nGoal\nTo know and explore different concepts, history and the context of the Data Sciences and the Machine Learning field, as well as to refresh previous notions of the discipline.\nContents 2/3\n\n\nRefresher of statistics\n\nRandom variables and data types\nDescriptive statistics\nProbability distributions"
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#generalities-of-the-field-2",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#generalities-of-the-field-2",
     "title": "Contextualization and contextualization",
-    "section": "",
-    "text": "To know and explore different concepts, history and the context of the Data Sciences and the Machine Learning field, as well as to refresh previous notions of the discipline.\n\n\n\n\n\nRefresher of programming\n\nData structures: the dataframe, series\nControl flow statements\nWork with libraries (modules)"
+    "section": "1. Generalities of the field",
+    "text": "1. Generalities of the field\nGoal\nTo know and explore different concepts, history and the context of the Data Sciences and the Machine Learning field, as well as to refresh previous notions of the discipline.\nContents 3/3\n\n\nRefresher of programming\n\nData structures: the dataframe, series\nControl flow statements\nWork with libraries (modules)"
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#data-preparation-eda-and-visualization",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#data-preparation-eda-and-visualization",
     "title": "Contextualization and contextualization",
-    "section": "",
-    "text": "To teach to the students how to prepare and clean the data as well as how to explore and understand the data before applying ML models.\n\n\n\n\n\n\nIntroduction to pandas.\nData importing, storage and file formats.\nHandling missing values, error detection, and correction.\nData normalization and standardization.\nFeature engineering: creation and selection of features."
+    "section": "2. Data preparation, EDA and visualization",
+    "text": "2. Data preparation, EDA and visualization\nGoal\nTo teach to the students how to prepare and clean the data as well as how to explore and understand the data before applying ML models.\nContents - 2.1. Data preparation\n\n\n\nIntroduction to pandas.\nData importing, storage and file formats.\nHandling missing values, error detection, and correction.\nData normalization and standardization.\nFeature engineering: creation and selection of features."
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#data-preparation-eda-and-visualization-1",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#data-preparation-eda-and-visualization-1",
     "title": "Contextualization and contextualization",
-    "section": "",
-    "text": "To teach to the students how to prepare and clean the data as well as how to explore and understand the data before applying ML models.\n\n\n\n\n\n\nImporting and merging data from different tables [and query language between tables (Optional)].\nReshaping and pivoting.\nString manipulation."
+    "section": "2. Data preparation, EDA and visualization",
+    "text": "2. Data preparation, EDA and visualization\nGoal\nTo teach to the students how to prepare and clean the data as well as how to explore and understand the data before applying ML models.\nContents - 2.2. Data wrangling\n\n\n\nImporting and merging data from different tables [and query language between tables (Optional)].\nReshaping and pivoting.\nString manipulation."
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#data-preparation-eda-and-visualization-2",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#data-preparation-eda-and-visualization-2",
     "title": "Contextualization and contextualization",
-    "section": "",
-    "text": "To teach to the students how to prepare and clean the data as well as how to explore and understand the data before applying ML models.\n\n\n\n\n\n\nPlotting with matplotlib\nOther libraries for plotting\nDescriptive univariate statistics and probability distributions.\nOutliers identification and handling.\nBivariate and multivariate relations (Correlation matrix)\nDimensionality reduction.\nPreliminary hypotheses testing."
+    "section": "2. Data preparation, EDA and visualization",
+    "text": "2. Data preparation, EDA and visualization\nGoal\nTo teach to the students how to prepare and clean the data as well as how to explore and understand the data before applying ML models.\nContents - 2.3. EDA and visualization\n\n\n\nPlotting with matplotlib\nOther libraries for plotting\nDescriptive univariate statistics and probability distributions.\nOutliers identification and handling.\nBivariate and multivariate relations (Correlation matrix)\nDimensionality reduction.\nPreliminary hypotheses testing."
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#ml-models",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#ml-models",
     "title": "Contextualization and contextualization",
-    "section": "",
-    "text": "To comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\n\n\n\n\n\n\nRegression and classification problems\n\nOverview and refresher of linear regression \nOverview and refresher of logistic regression\nLinear model selection and regularization"
+    "section": "3. ML models",
+    "text": "3. ML models\nGoal\nTo comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\nContents - 3.1. Supervised learning 1/3\n\n\n\nRegression and classification problems\n\nOverview and refresher of linear regression \nOverview and refresher of logistic regression\nLinear model selection and regularization"
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#ml-models-1",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#ml-models-1",
     "title": "Contextualization and contextualization",
-    "section": "",
-    "text": "To comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\n\n\n\n\n\n\nExtensions of linear-based methods\n\nPolynomial regression\nStep functions\nRegression splines\nSmoothing splines"
+    "section": "3. ML models",
+    "text": "3. ML models\nGoal\nTo comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\nContents - 3.1. Supervised learning 2/3\n\n\n\nExtensions of linear-based methods\n\nPolynomial regression\nStep functions\nRegression splines\nSmoothing splines"
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#ml-models-2",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#ml-models-2",
     "title": "Contextualization and contextualization",
-    "section": "",
-    "text": "To comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\n\n\n\n\n\n\nTree-based methods\nSupport vector machines\nIntroduction to deep learning"
+    "section": "3. ML models",
+    "text": "3. ML models\nGoal\nTo comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\nContents - 3.1. Supervised learning 3/3\n\n\n\nTree-based methods\nSupport vector machines\nIntroduction to deep learning"
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#ml-models-3",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#ml-models-3",
     "title": "Contextualization and contextualization",
-    "section": "",
-    "text": "To comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\n\n\n\n\n\n\nFundamentals and problem statement\nTechniques\n\nK-means clustering\nHierarchical clustering"
+    "section": "3. ML models",
+    "text": "3. ML models\nGoal\nTo comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\nContents - 3.2. Unsupervised learning\n\n\n\nFundamentals and problem statement\nTechniques\n\nK-means clustering\nHierarchical clustering"
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#common-challenges-and-final-remarks",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#common-challenges-and-final-remarks",
     "title": "Contextualization and contextualization",
-    "section": "",
-    "text": "To comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\n\n\n\n\n\n\nHigh dimensional data\nUnbalanced data\nUnlabeled data\nOverfitting\nClosing remarks"
+    "section": "3. Common challenges and final remarks",
+    "text": "3. Common challenges and final remarks\nGoal\nTo comprehend and apply some of the ML/ST models used for supervised learning in real and synthetic data.\nContents\n\n\n\nHigh dimensional data\nUnbalanced data\nUnlabeled data\nOverfitting\nClosing remarks"
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#evaluation",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#evaluation",
     "title": "Contextualization and contextualization",
-    "section": "",
-    "text": "The course will be evaluated by three types of activities:\n\n\nHomework socialization (40%)\nMidterm exam (30%)\nFinal exam (30%)"
+    "section": "Evaluation",
+    "text": "Evaluation\nThe course will be evaluated by three types of activities:\n\n\nHomework socialization (40%)\nMidterm exam (30%)\nFinal exam (30%)"
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#resources",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#resources",
     "title": "Contextualization and contextualization",
-    "section": "",
-    "text": "We will be using the follwing resources. All are free!\n\n\nCintia (Unicor)\nGoogle colab\nJupyter notebooks\nKaggle"
+    "section": "Resources",
+    "text": "Resources\nWe will be using the follwing resources. All are free!\n\n\nCintia (Unicor)\nGoogle colab\nJupyter notebooks\nKaggle"
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#references",
     "href": "docs/intro/context_and_concepts/context_and_concepts.html#references",
     "title": "Contextualization and contextualization",
-    "section": "",
-    "text": "James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An Introduction to Statistical Learning (2nd ed.). Springer.\nHastie, T., Tibshirani, R., & Friedman, J. (2009). The Elements of Statistical Learning. Springer New York. https://doi.org/10.1007/978-0-387-84858-7\nGéron, A. (2023). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (3rd ed.). O’Reilly Media Inc.\nMcKinney, W. (2021). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython (3rd ed.). O’Reilly Media.\nVicente Cestero, E., & Mateos Caballero, A. (2023). Inteligencia Artificial: Fundamentos matemáticos, algorítmicos y metodológicos. España: Eloy Vicente Cestero. ISBN 978-84-09-46911-6.\nBerzal, F. (2018). Redes Neuronales & Deep Learning. España. Fernando Berzal. ISBN 1-7312-6538-7"
+    "section": "References",
+    "text": "References\n\nJames, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An Introduction to Statistical Learning (2nd ed.). Springer.\nHastie, T., Tibshirani, R., & Friedman, J. (2009). The Elements of Statistical Learning. Springer New York. https://doi.org/10.1007/978-0-387-84858-7\nGéron, A. (2023). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (3rd ed.). O’Reilly Media Inc.\nMcKinney, W. (2021). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython (3rd ed.). O’Reilly Media.\nVicente Cestero, E., & Mateos Caballero, A. (2023). Inteligencia Artificial: Fundamentos matemáticos, algorítmicos y metodológicos. España: Eloy Vicente Cestero. ISBN 978-84-09-46911-6.\nBerzal, F. (2018). Redes Neuronales & Deep Learning. España. Fernando Berzal. ISBN 1-7312-6538-7"
   },
   {
     "objectID": "docs/intro/context_and_concepts/context_and_concepts.html#supervised-and-unsupervised-learning",
@@ -299,5 +299,439 @@
     "title": "Contextualization and contextualization",
     "section": "Unsupervised learning",
     "text": "Unsupervised learning"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#goal",
+    "href": "docs/statistics_refresher/stats_refresher.html#goal",
+    "title": "Statistics refresher",
+    "section": "Goal",
+    "text": "Goal\n\nTo remember key concepts in statistics that enhance and alllow to understand how machine learning methods work.\n\nContents\n\nBasic concepts in probability\nDescriptive statistics\nCommon probability distributions and random variables\nStatistical inference and hypotheses testing"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#probability-definition-and-importance",
+    "href": "docs/statistics_refresher/stats_refresher.html#probability-definition-and-importance",
+    "title": "Statistics refresher",
+    "section": "Probability definition and importance",
+    "text": "Probability definition and importance\nProbability is a numerical measure of the likelihood that an event will occur. It is expressed as a number between 0 and 1, where 0 indicates impossibility and 1 indicates certainty.\nAlso it can be seen as the frequency that event occurs in a sample or in a population.\nThis can be expressed mathematically as:\n\\[P(A) = \\frac{(\\text{Number of favorable outcomes})} {(\\text{Total number of possible outcomes})}\\]"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#probability-definition-and-importance-1",
+    "href": "docs/statistics_refresher/stats_refresher.html#probability-definition-and-importance-1",
+    "title": "Statistics refresher",
+    "section": "Probability definition and importance",
+    "text": "Probability definition and importance\n\n\n\n\n\nProbability seen as likelyhood\n\n\n\n\n\n\nProbability seen as frecuency"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#events-and-sample-spaces",
+    "href": "docs/statistics_refresher/stats_refresher.html#events-and-sample-spaces",
+    "title": "Statistics refresher",
+    "section": "Events and sample spaces",
+    "text": "Events and sample spaces\nSample space\nSet of all possible outcomes or results of that experiment.\nExample:\nConsider: \\(S = \\{H,T\\}\\) the sample space of the experiment: ‘tossing a coin’ (Experiment 1).\nTossing two coins is another experiment (Experiment 2). In this case, the sample space will be denoted by: \\(R=\\{HH,HT,TH,TT\\}\\). \nNote the sample space \\(R\\) is the cartesian product of \\(S\\) by itself: \\(R = S\\times R\\)."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#events-and-sample-spaces-1",
+    "href": "docs/statistics_refresher/stats_refresher.html#events-and-sample-spaces-1",
+    "title": "Statistics refresher",
+    "section": "Events and sample spaces",
+    "text": "Events and sample spaces\nEvent\nSubset of a sample space, this is a set of possible outcomes that share certain characteristic in a determined experiment.\nExample:\nConsider the experiments above and calculate the following:\nProbability of getting at least one tail in experiment 1: \\(R=\\{HH,HT,TH,TT\\}\\)."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#dependent-and-independent-events",
+    "href": "docs/statistics_refresher/stats_refresher.html#dependent-and-independent-events",
+    "title": "Statistics refresher",
+    "section": "Dependent and independent events",
+    "text": "Dependent and independent events\nIndependent Events\n\nDefinition: Two events are independent if the occurrence of one does not affect the probability of the other. \\[P(A \\cap B) = P(A) \\times P(B)\\]\nExample: Rolling a die and flipping a coin. The outcome of the die roll does not affect the outcome of the coin flip.\n\nDependent Events\n\nDefinition: Two events are dependent if the occurrence of one affects the probability of the other. \\[P(A \\cap B) = P(A) \\times P(B | A)\\]\nExample: Drawing cards without replacement. The probability of drawing a heart changes if you have already drawn one heart."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#example-calculations",
+    "href": "docs/statistics_refresher/stats_refresher.html#example-calculations",
+    "title": "Statistics refresher",
+    "section": "Example Calculations",
+    "text": "Example Calculations\nIndependent Events Example\n\nExperiment: Rolling a fair die and flipping a fair coin.\n\nProbability of rolling a 4, \\(P(A) = \\frac{1}{6}\\)\nProbability of getting heads, \\(P(B) = \\frac{1}{2}\\)\nJoint probability of rolling a 4 and getting heads: \\[\nP(A \\cap B) = P(A) \\times P(B) = \\frac{1}{6} \\times \\frac{1}{2} = \\frac{1}{12}\n\\]\n\n\nDependent Events Example\n\nExperiment: Drawing two cards from a deck without replacement.\n\nProbability of drawing a heart on the first draw, \\(P(A) = \\frac{13}{52} = \\frac{1}{4}\\)\nProbability of drawing a heart on the second draw given the first card was a heart, \\(P(B | A) = \\frac{12}{51}\\)\nJoint probability of both draws being hearts: \\[P(A \\cap B) = P(A) \\times P(B | A) = \\frac{1}{4} \\times \\frac{12}{51} = \\frac{12}{204} = \\frac{1}{17}\\]"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#complementary-and-compound-events",
+    "href": "docs/statistics_refresher/stats_refresher.html#complementary-and-compound-events",
+    "title": "Statistics refresher",
+    "section": "Complementary and compound events",
+    "text": "Complementary and compound events\nComplementary events\nComplementary events are two mutually exclusive events whose probabilities sum to 1, meaning one or the other must occur in any given trial.\n\nExample: When flipping a fair coin, “heads”(H) and “tails”(T) are complementary events. The probability of heads is 0.5, and the probability of tails is also 0.5. These probabilities sum to 1, and in any single flip, the outcome must be either heads or tails.\n\nFormally: \\[H \\equiv \\bar{T} \\text{ and } T \\equiv \\bar{H}\\] \\[P(H) = 1 - P(\\bar{H}) \\text{ and } P(T) = 1 - P(\\bar{T})\\]"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#complementary-and-compound-events-1",
+    "href": "docs/statistics_refresher/stats_refresher.html#complementary-and-compound-events-1",
+    "title": "Statistics refresher",
+    "section": "Complementary and compound events",
+    "text": "Complementary and compound events\nCompound events\nAre events that are formed by combining two or more simpler events using logical operations such as “and” (intersection) or “or” (union). There are two main types of composed events:\n\nIntersection (AND): The event occurs only if all component events occur simultaneously.\n\nExample: Drawing a red (R) king (K) from a standard deck of cards. This is composed of two events: drawing a red card AND drawing a king.\n\nThe probability of this compound event is: \\[P(K \\cap R) = P(K) \\cdot P(R) \\text{, as they are independent}\\] \\[P(K \\cap R) = \\frac{4}{52} \\cdot \\frac{26}{52} = \\frac{104}{2704} = 0.0385 \\]"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#complementary-and-compound-events-2",
+    "href": "docs/statistics_refresher/stats_refresher.html#complementary-and-compound-events-2",
+    "title": "Statistics refresher",
+    "section": "Complementary and compound events",
+    "text": "Complementary and compound events\nCompound events\nAre events that are formed by combining two or more simpler events using logical operations such as “and” (intersection) or “or” (union). There are two main types of composed events:\n\nUnion (OR): The event occurs if at least one of the component events occurs.\n\nExample: Rolling an even number or a number greater than 4 on a six-sided die. This is composed of the union of two events: \\(A:=\\) rolling an even number (2, 4, or 6) OR \\(B:=\\) rolling a number greater than 4 (5 or 6). \\[P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\text{, we must not account the commonality twice.}\\] \\[P(A \\cup B) = \\frac{3}{6} + \\frac{2}{6} - \\frac{1}{6} = \\frac{5}{6} = 0.8333\\]"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#conditional-probability",
+    "href": "docs/statistics_refresher/stats_refresher.html#conditional-probability",
+    "title": "Statistics refresher",
+    "section": "Conditional probability",
+    "text": "Conditional probability\nWhat is Conditional Probability?\n\nDefinition: Conditional probability is the probability of an event occurring given that another event has already occurred.\nNotation and calculation: \\(P(B | A)\\) which represents the probability of event B occurring given that event A has occurred. \\[\nP(B | A) = \\frac{P(A \\cap B)}{P(A)}\n\\]\nFrom the conditional probability notion, we can calculate the probability of both events A and B, by isolating the formula, from:\n\\[\nP(A \\cap B) = P(A) \\cdot P(B | A)\n\\]"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#conditional-probability-1",
+    "href": "docs/statistics_refresher/stats_refresher.html#conditional-probability-1",
+    "title": "Statistics refresher",
+    "section": "Conditional probability",
+    "text": "Conditional probability\nExample\n\nExperiment: Draw a card of a deck of 52 cards.\n\nEvent A: A heart is drawn.\nEvent B: A queen is drawn.\nIf we want to find the probability of drawing a queen given that a heart has been drawn: \\[\nP(\\text{Queen} | \\text{Heart}) = \\frac{P(\\text{Heart} \\cap \\text{Queen})}{P(\\text{Heart})}\n\\]\nThere is 1 queen of hearts out of 13 hearts, so:\n\\(P(\\text{Heart} \\cap \\text{Queen}) = \\frac{1}{52}\\), and \\(P(\\text{Heart}) = \\frac{13}{52} = \\frac{1}{4}\\) \\[\nP(\\text{Queen} | \\text{Heart}) = \\frac{\\frac{1}{52}}{\\frac{1}{4}} = \\frac{1}{13}\n\\]"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#conditional-probability-2",
+    "href": "docs/statistics_refresher/stats_refresher.html#conditional-probability-2",
+    "title": "Statistics refresher",
+    "section": "Conditional probability",
+    "text": "Conditional probability\nExercise:\n\nExperiment: There is bag with 3 red and 2 blue marbles. Two marbles are drawn without replacement.\n\nEvent A: Drawing a red marble first.\nEvent B: Drawing a blue marble second.\nFind \\(P(B | A)\\): \\[ P(B | A) = \\frac{P(A \\cap B)}{P(A)} \\]\n\\(P(A) = \\frac{3}{5}\\)\nAfter drawing one red marble, there are 2 blue and 2 red marbles left, so: \\[\nP(A \\cap B) = \\frac{3}{5} \\times \\frac{2}{4} = \\frac{3}{10}\n\\] \\[\nP(B | A) = \\frac{\\frac{3}{10}}{\\frac{3}{5}} = \\frac{2}{4} = \\frac{1}{2}\n\\]"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#bayes-theorem",
+    "href": "docs/statistics_refresher/stats_refresher.html#bayes-theorem",
+    "title": "Statistics refresher",
+    "section": "Bayes theorem",
+    "text": "Bayes theorem\nWhat is Bayes’ Theorem?\n\nDefinition: Bayes’ Theorem provides a way to update the probability of an event based on new evidence. It gives a mathematical rule for inverting conditional probabilities, allowing us to find the probability of a cause given its effect.\nFormula: \\[\nP(A | B) = \\frac{P(B | A) \\cdot P(A)}{P(B)}\n\\] where:\n\n\\(P(A | B)\\) is the posterior probability: the probability of event A given that B has occurred. (What we want to know)\n\\(P(B | A)\\) is the likelihood: the probability of event B given that A has occurred.\n\\(P(A)\\) is the prior probability: the initial probability of event A.\n\\(P(B)\\) is the marginal probability: the total probability of event B."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#bayes-theorem-visual-proof",
+    "href": "docs/statistics_refresher/stats_refresher.html#bayes-theorem-visual-proof",
+    "title": "Statistics refresher",
+    "section": "Bayes theorem (visual proof)",
+    "text": "Bayes theorem (visual proof)\n\nVisual proof of bayes theorem"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#example-3",
+    "href": "docs/statistics_refresher/stats_refresher.html#example-3",
+    "title": "Statistics refresher",
+    "section": "Example",
+    "text": "Example\nIn an manufacturing plant, two machines are used to assemble electric engines. Machine A produces 40% of the engines, while machine B produces 60%. The percentage of defective engines assembled by machine A is 2%, and by machine B is 3%. If an engine is randomly selected from the total production and turns out to be defective, what is the probability that it was assembled by machine A?"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#example-solution",
+    "href": "docs/statistics_refresher/stats_refresher.html#example-solution",
+    "title": "Statistics refresher",
+    "section": "Example solution",
+    "text": "Example solution\n\nGiven data:\n\n\\(P(A) = 0.40\\) (Probability that the engine was assembled by machine A).\n\\(P(B) = 0.60\\) (Probability that the engine was assembled by machine B).\n\\(P(D|A) = 0.02\\) (probability that the engine is defective given that it was assembled by machine A).\n\\(P(D|B) = 0.03\\) (probability that the engine is defective given that it was assembled by machine B).\n\nCalculate \\(P(D)\\): Total probability of the engine is defective: \\[\nP(D) = P(D|A) \\cdot P(A) + P(D|B) \\cdot P(B)\n\\] \\[\nP(D) = (0.02 \\cdot 0.40) + (0.03 \\cdot 0.60) = 0.008 + 0.018 = 0.026\n\\] \nFinally, calculate \\(P(A|D)\\): \\[\nP(A|D) = \\frac{P(D|A) \\cdot P(A)}{P(D)}\n\\] \\[\nP(A|D) = \\frac{0.02 \\cdot 0.40}{0.026} = \\frac{0.008}{0.026} \\approx 0.3076\n\\]\n\nThe probability that the defective engine was assembled by machine A is approximately 30.8%."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#example-2-1",
+    "href": "docs/statistics_refresher/stats_refresher.html#example-2-1",
+    "title": "Statistics refresher",
+    "section": "Example 2",
+    "text": "Example 2\n\nExperiment: A person takes a medical test for a rare disease.\n\nDisease Prevalence: \\(P(D) = 0.01\\) (1% of the population has the disease)\nTest Accuracy:\n\nTrue Positive Rate: \\(P(T | D) = 0.95\\) (95% chance of testing positive if the disease is present)\nFalse Positive Rate: \\(P(T | \\neg D) = 0.05\\) (5% chance of testing positive if the disease is not present)\n\nFind \\(P(D | T)\\): Probability of having the disease given a positive test result."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#example-2-solution",
+    "href": "docs/statistics_refresher/stats_refresher.html#example-2-solution",
+    "title": "Statistics refresher",
+    "section": "Example 2 solution",
+    "text": "Example 2 solution\nApplying the Bayes theorem we have:\n\nGiven Data:\n\n\\(P(D) = 0.01\\)\n\\(P(T | D) = 0.95\\)\n\\(P(T | \\neg D) = 0.05\\)\n\nCalculate \\(P(T)\\): Total probability of testing positive \\[\n  P(T) = P(T | D) \\cdot P(D) + P(T | \\neg D) \\cdot P(\\neg D)\n  \\] \\[\n  P(T) = (0.95 \\times 0.01) + (0.05 \\times 0.99) = 0.0095 + 0.0495 = 0.059\n  \\]\nCalculate \\(P(D | T)\\): \\[\nP(D | T) = \\frac{P(T | D) \\cdot P(D)}{P(T)}\n\\] \\[\nP(D | T) = \\frac{0.95 \\times 0.01}{0.059} \\approx \\frac{0.0095}{0.059} \\approx 0.161\n\\] So, the probability of having the disease given a positive test result is approximately 16.1%."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#exercise-homework",
+    "href": "docs/statistics_refresher/stats_refresher.html#exercise-homework",
+    "title": "Statistics refresher",
+    "section": "Exercise (homework)",
+    "text": "Exercise (homework)\n\nSuppose the person above, gave positive in a first test of the rare disease. To confirm the diagnostic, a second test with the same characteristics as the first is done in the same laboratory and under the same conditions as the first test. Calculate the probability of the person have the disease given a second positive result.\nSuppose the person takes the test for the third time and this time it comes back negative. Again, assume that the test is conducted under the same conditions as before. What is the probability that the person does not have the disease?"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#measures-of-central-tendency",
+    "href": "docs/statistics_refresher/stats_refresher.html#measures-of-central-tendency",
+    "title": "Statistics refresher",
+    "section": "Measures of central tendency",
+    "text": "Measures of central tendency\nComparison of Measures of Central Tendency\n\n\n\n\n\n\n\n\nMeasure\nAdvantages\nDisadvantages\n\n\n\n\nMean\nUses all data\nAffected by outliers\n\n\nMedian\nNot affected by outliers\nDoes not use all data\n\n\nMode\nUseful for categorical data\nMay not exist or may be multiple\n\n\n\nComparative Example:\n\nData: 2, 2, 3, 10, 100\nMean: 23.4\nMedian: 3\nMode: 2"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#percentiles-and-quartiles",
+    "href": "docs/statistics_refresher/stats_refresher.html#percentiles-and-quartiles",
+    "title": "Statistics refresher",
+    "section": "Percentiles and Quartiles",
+    "text": "Percentiles and Quartiles\n\nPercentiles:\n\nDefinition: Percentiles divide the data into 100 equal parts.\nCalculation: The \\(k\\)-th percentile is the value below which \\(k \\%\\) of the data fall.\nExample: The 25th percentile (P25) is the value below which 25% of the data lie.\n\nQuartiles:\n\nDefinition: Quartiles divide the data into four equal parts.\nComponents:\n\nQ1 (First Quartile): The 25th percentile, below which 25% of the data fall.\nQ2 (Second Quartile): The 50th percentile, also known as the median.\nQ3 (Third Quartile): The 75th percentile, below which 75% of the data fall.\n\n\nVisual Representation:\n\nBox Plot: Displays quartiles and the IQR, highlighting the spread and central tendency of the data."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#calculation-of-percentiles-and-quartiles",
+    "href": "docs/statistics_refresher/stats_refresher.html#calculation-of-percentiles-and-quartiles",
+    "title": "Statistics refresher",
+    "section": "Calculation of Percentiles and Quartiles",
+    "text": "Calculation of Percentiles and Quartiles\n\nSample Data:\n\nData: 30, 7, 21, 18, 4, 10, 16, 8, 25, 15\n\nPercentiles:\n\n25th Percentile (P25): Value below which 25% of the data fall.\n50th Percentile (P50): Also known as the median.\n75th Percentile (P75): Value below which 75% of the data fall.\n\nQuartiles:\n\nQ1 (First Quartile): The 25th percentile.\nQ2 (Second Quartile): The median (50th percentile).\nQ3 (Third Quartile): The 75th percentile."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#detailed-calculation-linear-interpolation-method",
+    "href": "docs/statistics_refresher/stats_refresher.html#detailed-calculation-linear-interpolation-method",
+    "title": "Statistics refresher",
+    "section": "Detailed Calculation (linear interpolation method):",
+    "text": "Detailed Calculation (linear interpolation method):\n\nSort Data: 4, 7, 8, 10, 15, 16, 18, 21, 25, 30\nFind Quartiles: \\[p(k)=1+(n−1)×p\\]\n\n\\(Q1\\) (quantile 0.25):\n\nPosition = \\(1+(10−1)×0.25=1+9×0.25=1+2.25=3.25\\)\n\\(Q1=8\\text{(the 3rd data point)}+(0.25×(10−8))=8+0.5=8.5\\)\n\n\\(Q2\\) (Median, quantile 0.5):\n\nPosition = \\(1+(10−1)×0.5=1+9×0.5=1+4.5=5.5\\)\nMedian = \\(Q2=15\\text{(the 5th data point)}+(0.5×(16−15))=8+0.5=15.5\\)\n\n\\(Q3\\) (quantile 0.75):\n\nPosition = \\(1+(10−1)×0.75=1+9×0.75=1+6.75=7.75\\)\n\\(Q3=18\\text{(the 7th data point)}+(0.75×(21−18))=18+2.25=20.25\\)"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#summary",
+    "href": "docs/statistics_refresher/stats_refresher.html#summary",
+    "title": "Statistics refresher",
+    "section": "Summary:",
+    "text": "Summary:"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#measures-of-dispersion",
+    "href": "docs/statistics_refresher/stats_refresher.html#measures-of-dispersion",
+    "title": "Statistics refresher",
+    "section": "Measures of Dispersion",
+    "text": "Measures of Dispersion\nComparison of Measures of Dispersion\n\n\n\n\n\n\n\n\nMeasure\nAdvantages\nDisadvantages\n\n\n\n\nRange\nSimple to calculate and understand\nSensitive to outliers\n\n\nVariance\nConsiders all data points\nUnits are squared, less intuitive\n\n\nStandard Deviation\nSame units as the data\nSensitive to outliers\n\n\nInterquartile Range (IQR)\nNot affected by outliers\nIgnores data outside the middle 50%\n\n\n\nComparative Example:\n\nData: 1, 2, 2, 3, 4, 10, 100\n\nRange: 99\nVariance: 1371.43\nStandard Deviation: 37.03\nIQR: 2"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#exercise-homework-12",
+    "href": "docs/statistics_refresher/stats_refresher.html#exercise-homework-12",
+    "title": "Statistics refresher",
+    "section": "Exercise (Homework) 1/2",
+    "text": "Exercise (Homework) 1/2\nYou are an educational analyst working with a school district to evaluate the performance of students in a recent standardized test. You have collected the test scores from a sample of 50 students. Some students performed exceptionally well, while others struggled significantly, which could indicate the presence of outliers.\nThe test scores you have collected are as follows: 3, 7, 8, 5, 12, 15, 7, 9, 11, 10, 13, 6, 14, 12, 16, 8, 20, 22, 25, 19, 17, 23, 18, 21, 24, 30, 31, 29, 35, 33, 28, 40, 37, 38, 34, 32, 42, 45, 50, 44, 41, 48, 46, 49, 100, 110, 120, 95, 90, 85"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#exercise-homework-22",
+    "href": "docs/statistics_refresher/stats_refresher.html#exercise-homework-22",
+    "title": "Statistics refresher",
+    "section": "Exercise (Homework) 2/2",
+    "text": "Exercise (Homework) 2/2\n\nWhat is the average performance of the students on this test? How does the median compare to the mean?\nAre there any scores that appear more frequently? What might this indicate about the test or the students?\nIdentify the outliers in the data set. How do these outliers affect the mean, variance, and standard deviation?\nHow do the outliers impact the range and IQR? What does this suggest about the robustness of these measures?\nHow much variability is there in the test scores? Are there any signs of high dispersion or concentration?\nWhat insights can you draw from the IQR and the range regarding the distribution of scores?\nBased on your analysis, what recommendations would you make to improve student performance or address any identified issues?\nConsider the outliers: Do you think they represent isolated incidents or indicative of a larger issue? How should the school district address these outliers?"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#random-variable",
+    "href": "docs/statistics_refresher/stats_refresher.html#random-variable",
+    "title": "Statistics refresher",
+    "section": "Random variable",
+    "text": "Random variable\n\nDefinition: A function that assigns a numerical value to each outcome in a sample space.\nDenoted with capital letters such as \\(X\\) or \\(Y\\).\nTypes:\n\nDiscrete Random Variable: Takes on countable values (e.g., integers).\nContinuous Random Variable: Takes on an infinite number of possible values within an interval."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#random-variable-examples",
+    "href": "docs/statistics_refresher/stats_refresher.html#random-variable-examples",
+    "title": "Statistics refresher",
+    "section": "Random variable examples:",
+    "text": "Random variable examples:\nDiscrete random variable: Tossing a Die\n\nSample Space: {1, 2, 3, 4, 5, 6}\nRandom Variable \\(X\\): Value showing up on the die.\nPossible Values: 1, 2, 3, 4, 5, 6\n\nContinuous random variable: Height of Individuals\n\nSample Space: All possible heights in centimeters.\nRandom Variable \\(Y\\): Height of an individual.\nPossible Values: Any real number within a range (e.g., 150 cm to 200 cm)."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#probability-distributions",
+    "href": "docs/statistics_refresher/stats_refresher.html#probability-distributions",
+    "title": "Statistics refresher",
+    "section": "Probability distributions",
+    "text": "Probability distributions\n\nDefinition: A PD describes how probabilities are distributed over the values of a random variable. It specifies the likelihood of each outcome.\nTypes:\n\nDiscrete Probability Distribution: For discrete random variables.\nContinuous Probability Distribution: For continuous random variables.\n\nProbability functions:\n\nDensity function \\(f(x)\\): Describes how the probability behaves for each value of the random variable.\nCumulative function \\(F(x)\\): Describes the probability for a range of values for the random variable.\n\n\\[F(x) = \\int_{-\\infty}^{x}f(t)dt\\] \\[F'(x) = f(x)\\]"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#examples",
+    "href": "docs/statistics_refresher/stats_refresher.html#examples",
+    "title": "Statistics refresher",
+    "section": "Examples:",
+    "text": "Examples:\n\n\nDiscrete Probability Distribution\n\nRandom Variable \\(X\\): Value shown up on a die.\nProbability Mass Function (PMF):\n\n\\(P(X = x) = \\frac{1}{6}\\) for \\(x \\in \\{1, 2, 3, 4, 5, 6\\}\\)\n\nDistribution:\n\nEach outcome (1 through 6) has an equal probability of \\(\\frac{1}{6}\\)."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#examples-1",
+    "href": "docs/statistics_refresher/stats_refresher.html#examples-1",
+    "title": "Statistics refresher",
+    "section": "Examples:",
+    "text": "Examples:\nContinuous Probability Distribution\n\nRandom Variable \\(Y\\): Height of an individual.\nProbability Density Function (PDF):\n\nDescribes the density of the probability over the height range.\nExample:\n\nNormal distribution with mean \\(\\mu\\) and standard deviation \\(\\sigma\\).\nGiven by \\(f(x) = \\frac{1}{\\sqrt{2 \\pi \\sigma^2}} \\exp\\left(-\\frac{(x - \\mu)^2}{2\\sigma^2}\\right)\\)\nMean \\(\\mu\\) and standard deviation \\(\\sigma\\).\n\n\nDistribution:\n\nHeights are distributed normally around the mean with a bell-shaped curve."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#examples-2",
+    "href": "docs/statistics_refresher/stats_refresher.html#examples-2",
+    "title": "Statistics refresher",
+    "section": "Examples:",
+    "text": "Examples:\nNormal distribution functions plots"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#other-distributions",
+    "href": "docs/statistics_refresher/stats_refresher.html#other-distributions",
+    "title": "Statistics refresher",
+    "section": "Other distributions",
+    "text": "Other distributions\nTriangular Distribution\n\nDefinition: A continuous probability distribution with a shape defined by three points: the minimum \\(a\\), the maximum \\(b\\), and the mode \\(c\\).\nUses:\n\nModeling subjective data: Often used in simulations where expert opinion estimates the minimum, maximum, and most likely outcome.\nRisk analysis: Used when there’s limited sample data, but subjective estimates for a range of possible outcomes are available.\nProject management: For estimating project completion times or costs.\n\nParameters:\n\nMinimum \\(a\\): The smallest value the variable can take.\nMaximum \\(b\\): The largest value the variable can take.\nMode \\(c\\): The most likely value (peak of the distribution)."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#triangular-distribution-1",
+    "href": "docs/statistics_refresher/stats_refresher.html#triangular-distribution-1",
+    "title": "Statistics refresher",
+    "section": "Triangular Distribution",
+    "text": "Triangular Distribution"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#other-distributions-1",
+    "href": "docs/statistics_refresher/stats_refresher.html#other-distributions-1",
+    "title": "Statistics refresher",
+    "section": "Other distributions",
+    "text": "Other distributions\nPoisson Distribution\n\nDefinition: A discrete probability distribution that expresses the probability of a given number of events occurring in a fixed interval of time or space.\nParameter: \\(\\lambda\\): The average number of events in the interval.\nUse: Modeling count data such as the number of emails received in an hour."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#poisson-distribution-1",
+    "href": "docs/statistics_refresher/stats_refresher.html#poisson-distribution-1",
+    "title": "Statistics refresher",
+    "section": "Poisson Distribution",
+    "text": "Poisson Distribution\nPoisson distribution functions plots"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#other-distributions-2",
+    "href": "docs/statistics_refresher/stats_refresher.html#other-distributions-2",
+    "title": "Statistics refresher",
+    "section": "Other distributions",
+    "text": "Other distributions\nExponential Distribution\n\nDefinition: A continuous probability distribution often used to model time until an event occurs.\nParameter: \\(\\lambda\\) - The rate parameter (inverse of the mean of the phenomenae).\nUse: Modeling time between events in a Poisson process, like the time between arrivals of buses."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#exponential-distribution-1",
+    "href": "docs/statistics_refresher/stats_refresher.html#exponential-distribution-1",
+    "title": "Statistics refresher",
+    "section": "Exponential Distribution",
+    "text": "Exponential Distribution\nExponential distribution functions plots"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#point-and-interval-estimation",
+    "href": "docs/statistics_refresher/stats_refresher.html#point-and-interval-estimation",
+    "title": "Statistics refresher",
+    "section": "Point and interval estimation",
+    "text": "Point and interval estimation\n-Point estimation: Single value that serves as an estimate of a population parameter (e.g., sample mean for population mean). \\[\\hat{\\mu} = \\frac{1}{n} \\sum_{i=1}^{n} x_i\\]\n-Interval estimation:Range of values believed to contain the population parameter with a certain probability. In the example below the estimation assumes a normal interval in a certain confidence level \\(0&lt;\\alpha&lt;1\\) \\[ \\hat{\\mu} \\in \\left( \\hat{\\mu} - Z_{\\alpha/2} \\frac{\\sigma}{\\sqrt{n}}, \\hat{\\mu} + Z_{\\alpha/2} \\frac{\\sigma}{\\sqrt{n}} \\right) \\]"
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#hypotheses-testing",
+    "href": "docs/statistics_refresher/stats_refresher.html#hypotheses-testing",
+    "title": "Statistics refresher",
+    "section": "Hypotheses testing",
+    "text": "Hypotheses testing\nNull hypothesis (\\(H_0\\)):\nAssumes no effect or no difference. ### Alternative hypothesis (\\(H_a\\)): Indicates the presence of an effect or difference.\nExample\nA company produces bolts with an average diameter of 10 mm. Quality control tests whether the production process is still correct.\n\nNull Hypothesis (H₀): \\[\nH_0: \\mu = 10 \\, \\text{mm}\n\\] The production process is functioning correctly, and the average diameter of the bolts is 10 mm.\nAlternative Hypothesis (H₁): \\[\nH_1: \\mu \\neq 10 \\, \\text{mm}\n\\] The production process is not functioning correctly, and the average diameter has changed."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#steps-in-hypothesis-testing",
+    "href": "docs/statistics_refresher/stats_refresher.html#steps-in-hypothesis-testing",
+    "title": "Statistics refresher",
+    "section": "Steps in Hypothesis Testing",
+    "text": "Steps in Hypothesis Testing\n\nState the Hypotheses:\n\nNull hypothesis (\\(H_0\\)) and alternative hypothesis (\\(H_1\\)).\n\nChoose a Significance Level (\\(\\alpha\\)):\n\nCommon values: \\(\\alpha = 0.05\\), \\(\\alpha = 0.01\\).\n\nCollect Data:\n\nObtain a random sample from the population of interest.\n\nCompute a Test Statistic:\n\nCompare the sample data against the null hypothesis.\n\nDetermine the p-value:\n\nThe probability of observing the data, assuming \\(H_0\\) is true.\n\nMake a Decision:\n\nReject \\(H_0\\) if p-value \\(\\leq \\alpha\\).\nFail to reject \\(H_0\\) if p-value \\(&gt; \\alpha\\)."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#p-value-and-significance-levels",
+    "href": "docs/statistics_refresher/stats_refresher.html#p-value-and-significance-levels",
+    "title": "Statistics refresher",
+    "section": "p-value and significance levels",
+    "text": "p-value and significance levels\n\nThe p-value is the probability of observing a test statistic as extreme as, or more extreme than, the one computed from the sample data, assuming the null hypothesis (\\(H_0\\)) is true.\n\n\\[\n\\text{p-value} = P(\\text{data} \\mid H_0 \\text{ is true})\n\\]\n\nA small p-value (usually \\(\\leq \\alpha\\)) suggests that the observed data is unlikely under \\(H_0\\), leading to the rejection of \\(H_0\\).\nA large p-value indicates that the observed data is consistent with \\(H_0\\), so we fail to reject \\(H_0\\)."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#significance-level-alpha",
+    "href": "docs/statistics_refresher/stats_refresher.html#significance-level-alpha",
+    "title": "Statistics refresher",
+    "section": "Significance Level (\\(\\alpha\\))",
+    "text": "Significance Level (\\(\\alpha\\))\n\nThe significance level (\\(\\alpha\\)) is the threshold for rejecting the null hypothesis.\nCommon values for \\(\\alpha\\):\n\n\\(0.05\\) (5%)\n\\(0.01\\) (1%)\n\nIt represents the maximum probability of making a Type I error (rejecting \\(H_0\\) when it’s true).\n\n\\[\n\\alpha = P(\\text{Type I Error})\n\\]\nInterpreting the p-value and significance levels\n\np-value \\(\\leq \\alpha\\):\n\nThe evidence against \\(H_0\\) is strong enough to reject it.\n“Statistically significant” result.\n\np-value \\(&gt; \\alpha\\):\n\nThe evidence is insufficient to reject \\(H_0\\).\nThe result is not statistically significant."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#common-hypothesis-tests",
+    "href": "docs/statistics_refresher/stats_refresher.html#common-hypothesis-tests",
+    "title": "Statistics refresher",
+    "section": "Common Hypothesis Tests",
+    "text": "Common Hypothesis Tests\n\nt-test:\n\nCompares the mean of a sample to a known value (or two sample means).\nAssumptions: Normally distributed data or large sample sizes.\n\nz-test:\n\nUsed when the population standard deviation is known and the sample size is large.\n\nANOVA (Analysis of Variance):\n\nCompares means across multiple groups.\n\nChi-Square Test:\n\nTests for relationships between categorical variables.\n\nProportion Test:\n\nCompares proportions in one or two samples (e.g., success rates)."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#type-i-and-type-ii-errors",
+    "href": "docs/statistics_refresher/stats_refresher.html#type-i-and-type-ii-errors",
+    "title": "Statistics refresher",
+    "section": "Type I and Type II Errors",
+    "text": "Type I and Type II Errors\n\nType I Error (\\(\\alpha\\)):\n\nRejecting \\(H_0\\) when it is actually true (false positive).\nThe significance level (\\(\\alpha\\)) is the probability of making a Type I error.\n\nType II Error (\\(\\beta\\)):\n\nFailing to reject \\(H_0\\) when \\(H_1\\) is true (false negative).\nThe power of the test (1 - \\(\\beta\\)) is the probability of correctly rejecting \\(H_0\\).\n\n\nTrade-off Between Error Types\n\nReducing \\(\\alpha\\) increases the chance of making a Type II error (\\(\\beta\\)).\nIncreasing the sample size reduces both error types."
+  },
+  {
+    "objectID": "docs/statistics_refresher/stats_refresher.html#references",
+    "href": "docs/statistics_refresher/stats_refresher.html#references",
+    "title": "Statistics refresher",
+    "section": "References",
+    "text": "References\n\nWalpole. et al"
+  },
+  {
+    "objectID": "docs/python_refresher/python_refresher.html#goal",
+    "href": "docs/python_refresher/python_refresher.html#goal",
+    "title": "Python introduction/refresher",
+    "section": "Goal",
+    "text": "Goal\n\nTo remember how to setup and work with python for preparing us to apply ML models and evaluate them.\n\n\nContents\n\nSetting up python\n\nCommon probability distributions and random variables\nStatistical inference and hypotheses testing"
+  },
+  {
+    "objectID": "docs/python_refresher/python_refresher.html#installation",
+    "href": "docs/python_refresher/python_refresher.html#installation",
+    "title": "Python refresher",
+    "section": "Installation",
+    "text": "Installation\nThere are several ways to get python installed in our systems."
+  },
+  {
+    "objectID": "docs/python_refresher/C/Users/VMNR/Documents/MEGA/1. Unicor/Cursos/DS Ciencia de datos/DSWebsite/docs/python_refresher/python_refresher.html#goal",
+    "href": "docs/python_refresher/C/Users/VMNR/Documents/MEGA/1. Unicor/Cursos/DS Ciencia de datos/DSWebsite/docs/python_refresher/python_refresher.html#goal",
+    "title": "Python introduction/refresher",
+    "section": "Goal",
+    "text": "Goal\n\nTo remember how to setup and work with python for preparing us to apply ML models and evaluate them.\n\n\nContents\n\nSetting up python\n\nCommon probability distributions and random variables\nStatistical inference and hypotheses testing"
+  },
+  {
+    "objectID": "docs/python_refresher/C/Users/VMNR/Documents/MEGA/1. Unicor/Cursos/DS Ciencia de datos/DSWebsite/docs/python_refresher/python_refresher.html#installation-windows",
+    "href": "docs/python_refresher/C/Users/VMNR/Documents/MEGA/1. Unicor/Cursos/DS Ciencia de datos/DSWebsite/docs/python_refresher/python_refresher.html#installation-windows",
+    "title": "Python introduction/refresher",
+    "section": "Installation (Windows)",
+    "text": "Installation (Windows)\nThere are several ways to get python installed in our systems.\n\nMicrosoft store\nPython webpage\nChocolatey store choco install python --version=3.11.0\nAnaconda distribution\n\nIn order to call python anywhere in our system, we have to add it to the system path (environment variables).\nOpen up python from console\nRun the command python. It will open the software for us important note."
+  },
+  {
+    "objectID": "docs/python_refresher/C/Users/VMNR/Documents/MEGA/1. Unicor/Cursos/DS Ciencia de datos/DSWebsite/docs/python_refresher/python_refresher.html#example-slide",
+    "href": "docs/python_refresher/C/Users/VMNR/Documents/MEGA/1. Unicor/Cursos/DS Ciencia de datos/DSWebsite/docs/python_refresher/python_refresher.html#example-slide",
+    "title": "Python introduction/refresher",
+    "section": "Example slide",
+    "text": "Example slide\nThis is a subtitle\nBefore we dive a bit deeper, here is a simple example of the clean theme in action.\n\nNo pictures or anything fancy. Just text for the moment.\n\nNext, we’ll take a brief tour of some theme components.\n\nWe’ll use the same basic structure as the original LaTeX slides.\nNote that the full suite of Reveal.js features are available for this Quarto implementation, even if we don’t cover everything here."
+  },
+  {
+    "objectID": "docs/python_refresher/C/Users/VMNR/Documents/MEGA/1. Unicor/Cursos/DS Ciencia de datos/DSWebsite/docs/python_refresher/python_refresher.html#before-you-proceed",
+    "href": "docs/python_refresher/C/Users/VMNR/Documents/MEGA/1. Unicor/Cursos/DS Ciencia de datos/DSWebsite/docs/python_refresher/python_refresher.html#before-you-proceed",
+    "title": "Python introduction/refresher",
+    "section": "Before you proceed…",
+    "text": "Before you proceed…\nRequirements for the coding examples in this demo\nThe clean theme is language agnostic. Use it with R, Python, Julia, etc. Or none of the above.\nHowever, this demo uses R code to highlight advanced theme features. You’ll need to install some software if you’d like to render the demo “as-is”.\n\n\n\n\n\n\nRequired software (this demo only)\n\n\nR packages\ninstall.packages(c(\"modelsummary\", \"fixest\", \"pdftools\", \"tinytex\", \"threejs\"))\nTinyTex\nquarto install tinytex\nWhile reveal.js presentations are HTML format, we will show an example of how to embed LaTeX tables as images. This requires a working Tex distribution, of which TinyTex provides by far the easiest and lightest integration with Quarto. More details here."
+  },
+  {
+    "objectID": "docs/python_refresher/C/Users/VMNR/Documents/MEGA/1. Unicor/Cursos/DS Ciencia de datos/DSWebsite/docs/python_refresher/python_refresher.html#components-1",
+    "href": "docs/python_refresher/C/Users/VMNR/Documents/MEGA/1. Unicor/Cursos/DS Ciencia de datos/DSWebsite/docs/python_refresher/python_refresher.html#components-1",
+    "title": "Python introduction/refresher",
+    "section": "Components",
+    "text": "Components"
+  },
+  {
+    "objectID": "docs/python_refresher/python_refresher.html#installation-windows",
+    "href": "docs/python_refresher/python_refresher.html#installation-windows",
+    "title": "Python introduction/refresher",
+    "section": "Installation (Windows)",
+    "text": "Installation (Windows)\nThere are several ways to get python installed in our systems.\n\nMicrosoft store\nPython webpage\nChocolatey store choco install python --version=3.11.0\nAnaconda distribution\n\nIn order to call python anywhere in our system, we have to add it to the system path (environment variables).\nOpen up python from console\nRun the command python. It will open the software for us important note."
+  },
+  {
+    "objectID": "docs/python_refresher/python_refresher.html#variables-and-data-types",
+    "href": "docs/python_refresher/python_refresher.html#variables-and-data-types",
+    "title": "Python introduction/refresher",
+    "section": "Variables and Data Types",
+    "text": "Variables and Data Types\nVariables are used to store data in Python.\n# Example: Defining variables\nx = 10       # Integer\ny = 3.14     # Float\nname = \"Alice\" # String\nis_student = True # Boolean\nData types: - int: Integer - float: Floating-point number - str: String (text) - bool: Boolean (True/False)"
+  },
+  {
+    "objectID": "docs/python_refresher/python_refresher.html#basic-operations",
+    "href": "docs/python_refresher/python_refresher.html#basic-operations",
+    "title": "Python introduction/refresher",
+    "section": "Basic Operations",
+    "text": "Basic Operations\nPython supports basic mathematical and logical operations.\n\nArithmetic operations: +, -, *, /, ** (exponentiation)\n\n# Example: Basic operations\na = 5\nb = 3\nsum_result = a + b    # Addition\npower = a ** b        # Exponentiation\n\nLogical operations: ==, !=, &gt;, &lt;, &gt;=, &lt;=\n\n# Example: Logical comparison\nis_equal = (a == b)   # False"
+  },
+  {
+    "objectID": "docs/python_refresher/python_refresher.html#control-structures-if-else",
+    "href": "docs/python_refresher/python_refresher.html#control-structures-if-else",
+    "title": "Python introduction/refresher",
+    "section": "Control Structures: if-else",
+    "text": "Control Structures: if-else\nConditional statements allow us to make decisions in code.\n# Example: if-else statement\nif a &gt; b:\n    print(\"a is greater than b\")\nelse:\n    print(\"a is less than or equal to b\")\nStructure:\nif condition:\n    statement(s)\nelse: \n    statement(s)"
+  },
+  {
+    "objectID": "docs/python_refresher/python_refresher.html#control-structures-loops",
+    "href": "docs/python_refresher/python_refresher.html#control-structures-loops",
+    "title": "Python introduction/refresher",
+    "section": "Control Structures: Loops",
+    "text": "Control Structures: Loops\nFor Loops\nUsed to iterate over sequences (lists, strings, etc.).\n# Example: for loop\nfor i in range(5):\n    print(i)\nWhile Loops\nRepeats as long as a condition is true.\n# Example: while loop\ncounter = 0\nwhile counter &lt; 5:\n    print(counter)\n    counter += 1"
+  },
+  {
+    "objectID": "docs/python_refresher/python_refresher.html#functions-and-scope",
+    "href": "docs/python_refresher/python_refresher.html#functions-and-scope",
+    "title": "Python introduction/refresher",
+    "section": "Functions and Scope",
+    "text": "Functions and Scope\nFunctions encapsulate reusable blocks of code.\n# Example: Defining and using functions\ndef add_numbers(x, y):\n    return x + y\n\nresult = add_numbers(3, 5)\nprint(result)  # Output: 8\nScope:\nVariables defined inside a function are local, while those outside are global.\n\\[\n\\text{def func(): \\newline \\hspace{4mm} local_variable \\newline global_variable}\n\\]"
+  },
+  {
+    "objectID": "docs/python_refresher/python_refresher.html#lists-tuples-dictionaries-and-sets",
+    "href": "docs/python_refresher/python_refresher.html#lists-tuples-dictionaries-and-sets",
+    "title": "Python introduction/refresher",
+    "section": "Lists, Tuples, Dictionaries, and Sets",
+    "text": "Lists, Tuples, Dictionaries, and Sets\nLists: Ordered, mutable collection.\n# Example: Lists\nmy_list = [1, 2, 3, 4]\nmy_list.append(5)    # Add an element\nTuples: Ordered, immutable collection.\n# Example: Tuples\nmy_tuple = (1, 2, 3)\nDictionaries: Key-value pairs.\n# Example: Dictionary\nmy_dict = {\"name\": \"Alice\", \"age\": 25}\nprint(my_dict[\"name\"])  # Output: Alice\nSets: Unordered, no duplicates.\n# Example: Sets\nmy_set = {1, 2, 3, 2}"
   }
 ]

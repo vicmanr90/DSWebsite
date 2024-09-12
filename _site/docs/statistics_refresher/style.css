@@ -1,0 +1,132 @@
+/* --- General Styles --- */
+.reveal {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+  }
+  
+  /* --- Title Slide --- */
+  .reveal .title-slide h1 {
+    font-size: 2.5em;
+    color: #00539b; /* Dark blue */
+  }
+  
+  .reveal .title-slide h2,
+  .reveal .title-slide h3 {
+    font-size: 1.5em;
+    color: #333333;
+  }
+  
+  /* --- Slide Titles --- */
+  .reveal h1, .reveal h2, .reveal h3 {
+    font-weight: bold;
+    color: #00539b; /* Dark blue for titles */
+    border-bottom: 2px solid #00539b;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* --- Headers Bar --- */
+  .reveal .header-bar {
+    background-color: #00539b;
+    color: white;
+    padding: 10px;
+    font-size: 0.9em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: left;
+  }
+  
+  .reveal .header-bar p {
+    margin: 0;
+  }
+  
+  /* --- Footer --- */
+  .reveal footer {
+    background-color: #00539b;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  
+  /* --- List Styles --- */
+  .reveal ul {
+    list-style: square;
+  }
+  
+  .reveal li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  /* --- Blockquote Styles --- */
+  .reveal blockquote {
+    border-left: 3px solid #00539b;
+    padding-left: 10px;
+    font-style: italic;
+    color: #333333;
+  }
+  
+  /* --- Code Styles --- */
+  .reveal code {
+    background-color: #f7f7f7;
+    color: #d6336c; /* Beamer-like code color */
+    padding: 2px 4px;
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  /* --- Button/Link Styles --- */
+  .reveal a {
+    color: #d6336c;
+    text-decoration: none;
+    border-bottom: 1px solid #d6336c;
+  }
+  
+  .reveal a:hover {
+    color: #00539b;
+    border-bottom-color: #00539b;
+  }
+  
+  /* --- Table Styles --- */
+  .reveal table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .reveal th {
+    background-color: #00539b;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .reveal td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+  }
+  
+  /* --- Figures/Images --- */
+  .reveal img {
+    border: 2px solid #cccccc;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  /* --- Slide Navigation --- */
+  .reveal .controls {
+    color: #00539b;
+  }
+  
+  .reveal .progress-bar {
+    background-color: #00539b;
+  }
+  
+  

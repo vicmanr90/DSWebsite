@@ -10,8 +10,8 @@ website:
         icon: home
       - href: about.qmd
         text: 'Acerca de'
-      - href: slides.qmd
-        text: Tema 1
+      - href: \docs\context_and_concepts\context_and_concepts.qmd
+        text: Course presentation
     tools:
       - icon: linkedin
         href: https://linkedin.com/in/vicmanr90/

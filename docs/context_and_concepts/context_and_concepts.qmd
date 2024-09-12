@@ -2,20 +2,11 @@
 title: Contextualization and contextualization
 author: Víctor Mario Noble Ramos, MSc.
 date: today
-format: 
+format: #revealjs 
     beamer:
         theme: CambridgeUS
         include-in-header:
-            text: |
-                \useoutertheme{infolines}
-                \useinnertheme{rectangles}
-                \AtBeginSection[]
-                {
-                \begin{frame}<beamer>
-                    \frametitle{Outline %for section \thesection}
-                    \tableofcontents[currentsection]
-                \end{frame}
-                }
+            file: header.tex 
 ---
 
 # Course presentation 
@@ -340,8 +331,3 @@ We will be using the follwing resources. All are free!
 
 
 # Let us start: Fundamental concepts
-
-## Supervised and unsupervised learning
-
-
-## Unsupervised learning

@@ -45,6 +45,8 @@ Apart from mathematics and statistics...
 
 **Data Science:** Field of study concentrated on the tools, mechanisms and processes to transform *data* into useful *information*, decision-making tools and decision-making support tools. DS shares some of the AI techniques and tools for this purpose.
 
+**Neural network:** Family of ML techniques which use the *perceptron* as a fundamental unit of information processing. The *perceptron* is an abstraction of a biological neuron.
+
 <!-- ::: {#fig-elephant} -->
 <!-- [![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Elephant_Diversity.jpg/1920px-Elephant_Diversity.jpg)](https://en.wikipedia.org/wiki/Elephant) -->
 
